@@ -1,2 +1,9 @@
 *~
 lib/*
+*.cmo
+*.cmx
+*.cmi
+*.o
+*.annot
+*.ml.depends
+
