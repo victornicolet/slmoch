@@ -1,0 +1,2588 @@
+"fgen.ml" 8 72 76 "fgen.ml" 8 72 85
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def term_zero "fgen.ml" 9 114 114 "fgen.ml" 1 0 -1
+)
+"fgen.ml" 8 72 88 "fgen.ml" 8 72 101
+type(
+  Num.num -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_int
+)
+"fgen.ml" 8 72 111 "fgen.ml" 8 72 112
+type(
+  int
+)
+"fgen.ml" 8 72 102 "fgen.ml" 8 72 113
+type(
+  Num.num
+)
+"fgen.ml" 8 72 88 "fgen.ml" 8 72 113
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 9 114 118 "fgen.ml" 9 114 126
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def term_one "fgen.ml" 11 156 156 "fgen.ml" 1 0 -1
+)
+"fgen.ml" 9 114 129 "fgen.ml" 9 114 142
+type(
+  Num.num -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_int
+)
+"fgen.ml" 9 114 152 "fgen.ml" 9 114 153
+type(
+  int
+)
+"fgen.ml" 9 114 143 "fgen.ml" 9 114 154
+type(
+  Num.num
+)
+"fgen.ml" 9 114 129 "fgen.ml" 9 114 154
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 11 156 160 "fgen.ml" 11 156 170
+type(
+  Aez.Smt.Term.t Stack.t
+)
+ident(
+  def state_vars "fgen.ml" 13 190 190 "fgen.ml" 1 0 -1
+)
+"fgen.ml" 11 156 173 "fgen.ml" 11 156 185
+type(
+  unit -> Aez.Smt.Term.t Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"fgen.ml" 11 156 186 "fgen.ml" 11 156 188
+type(
+  unit
+)
+"fgen.ml" 11 156 173 "fgen.ml" 11 156 188
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t Stack.t
+)
+"fgen.ml" 13 190 198 "fgen.ml" 13 190 213
+type(
+  Aez.Smt.Term.t ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_expr -> Smt_utils.exp_translation
+)
+ident(
+  def gen_term_of_exp "fgen.ml" 13 190 190 "fgen.ml" 1 0 -1
+)
+"fgen.ml" 13 190 214 "fgen.ml" 13 190 215
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def n "fgen.ml" 13 190 216 "fgen.ml" 74 2047 2091
+)
+"fgen.ml" 13 190 216 "fgen.ml" 13 190 219
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  def ids "fgen.ml" 13 190 220 "fgen.ml" 74 2047 2091
+)
+"fgen.ml" 13 190 220 "fgen.ml" 13 190 223
+type(
+  Typed_ast.t_expr
+)
+ident(
+  def exp "fgen.ml" 14 226 228 "fgen.ml" 74 2047 2091
+)
+"fgen.ml" 14 226 234 "fgen.ml" 14 226 237
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref exp "fgen.ml" 13 190 220 "fgen.ml" 13 190 223
+)
+"fgen.ml" 14 226 234 "fgen.ml" 14 226 248
+type(
+  Typed_ast.t_expr_desc
+)
+"fgen.ml" 15 254 267 "fgen.ml" 15 254 268
+type(
+  Asttypes.const
+)
+ident(
+  def c "fgen.ml" 16 273 274 "fgen.ml" 21 462 466
+)
+"fgen.ml" 15 254 258 "fgen.ml" 15 254 268
+type(
+  Typed_ast.t_expr_desc
+)
+"fgen.ml" 17 280 289 "fgen.ml" 17 280 290
+type(
+  Asttypes.const
+)
+ident(
+  int_ref c "fgen.ml" 15 254 267 "fgen.ml" 15 254 268
+)
+"fgen.ml" 18 296 307 "fgen.ml" 18 296 308
+type(
+  bool
+)
+ident(
+  def b "fgen.ml" 18 296 312 "fgen.ml" 18 296 361
+)
+"fgen.ml" 18 296 301 "fgen.ml" 18 296 308
+type(
+  Asttypes.const
+)
+"fgen.ml" 18 296 324 "fgen.ml" 18 296 325
+type(
+  bool
+)
+ident(
+  int_ref b "fgen.ml" 18 296 307 "fgen.ml" 18 296 308
+)
+"fgen.ml" 18 296 331 "fgen.ml" 18 296 342
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.t_true
+)
+"fgen.ml" 18 296 348 "fgen.ml" 18 296 360
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.t_false
+)
+"fgen.ml" 18 296 320 "fgen.ml" 18 296 361
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 18 296 312 "fgen.ml" 18 296 361
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 19 362 372 "fgen.ml" 19 362 373
+type(
+  int
+)
+ident(
+  def i "fgen.ml" 19 362 377 "fgen.ml" 19 362 412
+)
+"fgen.ml" 19 362 367 "fgen.ml" 19 362 373
+type(
+  Asttypes.const
+)
+"fgen.ml" 19 362 386 "fgen.ml" 19 362 399
+type(
+  Num.num -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_int
+)
+"fgen.ml" 19 362 409 "fgen.ml" 19 362 410
+type(
+  int
+)
+ident(
+  int_ref i "fgen.ml" 19 362 372 "fgen.ml" 19 362 373
+)
+"fgen.ml" 19 362 400 "fgen.ml" 19 362 411
+type(
+  Num.num
+)
+"fgen.ml" 19 362 385 "fgen.ml" 19 362 412
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 19 362 377 "fgen.ml" 19 362 412
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 20 413 424 "fgen.ml" 20 413 425
+type(
+  float
+)
+ident(
+  def r "fgen.ml" 20 413 429 "fgen.ml" 20 413 461
+)
+"fgen.ml" 20 413 418 "fgen.ml" 20 413 425
+type(
+  Asttypes.const
+)
+"fgen.ml" 20 413 429 "fgen.ml" 20 413 437
+type(
+  string -> Smt_utils.exp_translation
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"fgen.ml" 20 413 438 "fgen.ml" 20 413 461
+type(
+  string
+)
+"fgen.ml" 20 413 429 "fgen.ml" 20 413 461
+call(
+  tail
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 16 273 274 "fgen.ml" 21 462 466
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 22 467 480 "fgen.ml" 22 467 482
+type(
+  Ident.t
+)
+ident(
+  def id "fgen.ml" 22 467 486 "fgen.ml" 23 495 532
+)
+"fgen.ml" 22 467 471 "fgen.ml" 22 467 482
+type(
+  Typed_ast.t_expr_desc
+)
+"fgen.ml" 23 495 497 "fgen.ml" 23 495 510
+type(
+  Aez.Smt.Symbol.t -> Aez.Smt.Term.t list -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_app
+)
+"fgen.ml" 23 495 512 "fgen.ml" 23 495 519
+type(
+  Smt_utils.VarToSymbols.key ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t -> Aez.Smt.Symbol.t
+)
+ident(
+  ext_ref Smt_utils.find_id
+)
+"fgen.ml" 23 495 520 "fgen.ml" 23 495 522
+type(
+  Smt_utils.VarToSymbols.key
+)
+ident(
+  int_ref id "fgen.ml" 22 467 480 "fgen.ml" 22 467 482
+)
+"fgen.ml" 23 495 523 "fgen.ml" 23 495 526
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref ids "fgen.ml" 13 190 216 "fgen.ml" 13 190 219
+)
+"fgen.ml" 23 495 511 "fgen.ml" 23 495 527
+call(
+  stack
+)
+type(
+  Aez.Smt.Symbol.t
+)
+"fgen.ml" 23 495 529 "fgen.ml" 23 495 530
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 13 190 214 "fgen.ml" 13 190 215
+)
+"fgen.ml" 23 495 528 "fgen.ml" 23 495 531
+type(
+  Aez.Smt.Term.t list
+)
+"fgen.ml" 23 495 496 "fgen.ml" 23 495 532
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 22 467 486 "fgen.ml" 23 495 532
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 24 533 544 "fgen.ml" 24 533 546
+type(
+  Asttypes.op
+)
+ident(
+  def op "fgen.ml" 25 556 557 "fgen.ml" 50 1287 1291
+)
+"fgen.ml" 24 533 548 "fgen.ml" 24 533 550
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  def el "fgen.ml" 25 556 557 "fgen.ml" 50 1287 1291
+)
+"fgen.ml" 24 533 537 "fgen.ml" 24 533 551
+type(
+  Typed_ast.t_expr_desc
+)
+"fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  def term_list "fgen.ml" 26 612 613 "fgen.ml" 50 1287 1291
+)
+"fgen.ml" 25 556 573 "fgen.ml" 25 556 581
+type(
+  (Typed_ast.t_expr -> Smt_utils.exp_translation) ->
+  Typed_ast.t_expr list -> Smt_utils.exp_translation list
+)
+ident(
+  ext_ref List.map
+)
+"fgen.ml" 25 556 583 "fgen.ml" 25 556 598
+type(
+  Aez.Smt.Term.t ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_expr -> Smt_utils.exp_translation
+)
+ident(
+  int_ref gen_term_of_exp "fgen.ml" 13 190 198 "fgen.ml" 13 190 213
+)
+"fgen.ml" 25 556 599 "fgen.ml" 25 556 600
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 13 190 214 "fgen.ml" 13 190 215
+)
+"fgen.ml" 25 556 601 "fgen.ml" 25 556 604
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref ids "fgen.ml" 13 190 216 "fgen.ml" 13 190 219
+)
+"fgen.ml" 25 556 582 "fgen.ml" 25 556 605
+call(
+  stack
+)
+type(
+  Typed_ast.t_expr -> Smt_utils.exp_translation
+)
+"fgen.ml" 25 556 606 "fgen.ml" 25 556 608
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  int_ref el "fgen.ml" 24 533 548 "fgen.ml" 24 533 550
+)
+"fgen.ml" 25 556 573 "fgen.ml" 25 556 608
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation list
+)
+"fgen.ml" 26 612 617 "fgen.ml" 26 612 627
+type(
+  Smt_utils.formula_operator
+)
+ident(
+  def wrapped_op "fgen.ml" 27 649 650 "fgen.ml" 50 1287 1291
+)
+"fgen.ml" 26 612 630 "fgen.ml" 26 612 642
+type(
+  Asttypes.op -> Smt_utils.formula_operator
+)
+ident(
+  ext_ref Smt_utils.translate_op
+)
+"fgen.ml" 26 612 643 "fgen.ml" 26 612 645
+type(
+  Asttypes.op
+)
+ident(
+  int_ref op "fgen.ml" 24 533 544 "fgen.ml" 24 533 546
+)
+"fgen.ml" 26 612 630 "fgen.ml" 26 612 645
+call(
+  stack
+)
+type(
+  Smt_utils.formula_operator
+)
+"fgen.ml" 28 656 665 "fgen.ml" 28 656 675
+type(
+  Smt_utils.formula_operator
+)
+ident(
+  int_ref wrapped_op "fgen.ml" 26 612 617 "fgen.ml" 26 612 627
+)
+"fgen.ml" 29 682 698 "fgen.ml" 29 682 702
+type(
+  Aez.Smt.Formula.comparator
+)
+ident(
+  def comp "fgen.ml" 30 707 709 "fgen.ml" 31 743 784
+)
+"fgen.ml" 29 682 687 "fgen.ml" 29 682 702
+type(
+  Smt_utils.formula_operator
+)
+"fgen.ml" 30 707 721 "fgen.ml" 30 707 737
+type(
+  Aez.Smt.Formula.comparator -> Aez.Smt.Term.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make_lit
+)
+"fgen.ml" 30 707 738 "fgen.ml" 30 707 742
+type(
+  Aez.Smt.Formula.comparator
+)
+ident(
+  int_ref comp "fgen.ml" 29 682 698 "fgen.ml" 29 682 702
+)
+"fgen.ml" 31 743 751 "fgen.ml" 31 743 759
+type(
+  (Smt_utils.exp_translation -> Aez.Smt.Term.t) ->
+  Smt_utils.exp_translation list -> Aez.Smt.Term.t list
+)
+ident(
+  ext_ref List.map
+)
+"fgen.ml" 31 743 760 "fgen.ml" 31 743 772
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 31 743 773 "fgen.ml" 31 743 782
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+)
+"fgen.ml" 31 743 750 "fgen.ml" 31 743 783
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t list
+)
+"fgen.ml" 30 707 720 "fgen.ml" 31 743 784
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 30 707 709 "fgen.ml" 31 743 784
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 32 785 801 "fgen.ml" 32 785 805
+type(
+  Aez.Smt.Formula.combinator
+)
+ident(
+  def comb "fgen.ml" 33 809 811 "fgen.ml" 34 841 880
+)
+"fgen.ml" 32 785 790 "fgen.ml" 32 785 805
+type(
+  Smt_utils.formula_operator
+)
+"fgen.ml" 33 809 823 "fgen.ml" 33 809 835
+type(
+  Aez.Smt.Formula.combinator -> Aez.Smt.Formula.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make
+)
+"fgen.ml" 33 809 836 "fgen.ml" 33 809 840
+type(
+  Aez.Smt.Formula.combinator
+)
+ident(
+  int_ref comb "fgen.ml" 32 785 801 "fgen.ml" 32 785 805
+)
+"fgen.ml" 34 841 849 "fgen.ml" 34 841 857
+type(
+  (Smt_utils.exp_translation -> Aez.Smt.Formula.t) ->
+  Smt_utils.exp_translation list -> Aez.Smt.Formula.t list
+)
+ident(
+  ext_ref List.map
+)
+"fgen.ml" 34 841 858 "fgen.ml" 34 841 868
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Smt_utils.to_formula
+)
+"fgen.ml" 34 841 869 "fgen.ml" 34 841 878
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+)
+"fgen.ml" 34 841 848 "fgen.ml" 34 841 879
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 33 809 822 "fgen.ml" 34 841 880
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 33 809 811 "fgen.ml" 34 841 880
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 35 881 898 "fgen.ml" 35 881 900
+type(
+  Aez.Smt.Term.operator
+)
+ident(
+  def op "fgen.ml" 36 904 906 "fgen.ml" 41 1069 1072
+)
+"fgen.ml" 35 881 886 "fgen.ml" 35 881 900
+type(
+  Smt_utils.formula_operator
+)
+"fgen.ml" 36 904 913 "fgen.ml" 36 904 924
+type(
+  Smt_utils.exp_translation list -> int
+)
+ident(
+  ext_ref List.length
+)
+"fgen.ml" 36 904 925 "fgen.ml" 36 904 934
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+)
+"fgen.ml" 36 904 913 "fgen.ml" 36 904 934
+call(
+  stack
+)
+type(
+  int
+)
+"fgen.ml" 36 904 935 "fgen.ml" 36 904 936
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"fgen.ml" 36 904 937 "fgen.ml" 36 904 938
+type(
+  int
+)
+"fgen.ml" 36 904 912 "fgen.ml" 36 904 939
+type(
+  bool
+)
+"fgen.ml" 36 904 906 "fgen.ml" 36 904 939
+type(
+  unit
+)
+"fgen.ml" 37 941 952 "fgen.ml" 37 941 967
+type(
+  Aez.Smt.Term.operator -> Aez.Smt.Term.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_arith
+)
+"fgen.ml" 38 969 976 "fgen.ml" 38 969 978
+type(
+  Aez.Smt.Term.operator
+)
+ident(
+  int_ref op "fgen.ml" 35 881 898 "fgen.ml" 35 881 900
+)
+"fgen.ml" 39 979 987 "fgen.ml" 39 979 999
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 39 979 1001 "fgen.ml" 39 979 1009
+type(
+  Smt_utils.exp_translation list -> int -> Smt_utils.exp_translation
+)
+ident(
+  ext_ref List.nth
+)
+"fgen.ml" 39 979 1010 "fgen.ml" 39 979 1019
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+)
+"fgen.ml" 39 979 1020 "fgen.ml" 39 979 1021
+type(
+  int
+)
+"fgen.ml" 39 979 1000 "fgen.ml" 39 979 1022
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 39 979 986 "fgen.ml" 39 979 1023
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 40 1024 1032 "fgen.ml" 40 1024 1044
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 40 1024 1046 "fgen.ml" 40 1024 1054
+type(
+  Smt_utils.exp_translation list -> int -> Smt_utils.exp_translation
+)
+ident(
+  ext_ref List.nth
+)
+"fgen.ml" 40 1024 1055 "fgen.ml" 40 1024 1064
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+)
+"fgen.ml" 40 1024 1065 "fgen.ml" 40 1024 1066
+type(
+  int
+)
+"fgen.ml" 40 1024 1045 "fgen.ml" 40 1024 1067
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 40 1024 1031 "fgen.ml" 40 1024 1068
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 37 941 951 "fgen.ml" 41 1069 1072
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 37 941 943 "fgen.ml" 41 1069 1072
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 36 904 906 "fgen.ml" 41 1069 1072
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 42 1073 1086 "fgen.ml" 42 1073 1094
+type(
+  Aez.Smt.Formula.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t
+)
+ident(
+  def itemaker "fgen.ml" 43 1098 1100 "fgen.ml" 49 1283 1286
+)
+"fgen.ml" 42 1073 1078 "fgen.ml" 42 1073 1094
+type(
+  Smt_utils.formula_operator
+)
+"fgen.ml" 43 1098 1107 "fgen.ml" 43 1098 1118
+type(
+  Smt_utils.exp_translation list -> int
+)
+ident(
+  ext_ref List.length
+)
+"fgen.ml" 43 1098 1119 "fgen.ml" 43 1098 1128
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+)
+"fgen.ml" 43 1098 1107 "fgen.ml" 43 1098 1128
+call(
+  stack
+)
+type(
+  int
+)
+"fgen.ml" 43 1098 1129 "fgen.ml" 43 1098 1130
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"fgen.ml" 43 1098 1131 "fgen.ml" 43 1098 1132
+type(
+  int
+)
+"fgen.ml" 43 1098 1106 "fgen.ml" 43 1098 1133
+type(
+  bool
+)
+"fgen.ml" 43 1098 1100 "fgen.ml" 43 1098 1133
+type(
+  unit
+)
+"fgen.ml" 45 1147 1151 "fgen.ml" 45 1147 1159
+type(
+  Aez.Smt.Formula.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t
+)
+ident(
+  int_ref itemaker "fgen.ml" 42 1073 1086 "fgen.ml" 42 1073 1094
+)
+"fgen.ml" 46 1162 1166 "fgen.ml" 46 1162 1176
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Smt_utils.to_formula
+)
+"fgen.ml" 46 1162 1178 "fgen.ml" 46 1162 1186
+type(
+  Smt_utils.exp_translation list -> int -> Smt_utils.exp_translation
+)
+ident(
+  ext_ref List.nth
+)
+"fgen.ml" 46 1162 1187 "fgen.ml" 46 1162 1196
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+)
+"fgen.ml" 46 1162 1197 "fgen.ml" 46 1162 1198
+type(
+  int
+)
+"fgen.ml" 46 1162 1177 "fgen.ml" 46 1162 1199
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 46 1162 1165 "fgen.ml" 46 1162 1200
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 47 1201 1205 "fgen.ml" 47 1201 1217
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 47 1201 1219 "fgen.ml" 47 1201 1227
+type(
+  Smt_utils.exp_translation list -> int -> Smt_utils.exp_translation
+)
+ident(
+  ext_ref List.nth
+)
+"fgen.ml" 47 1201 1228 "fgen.ml" 47 1201 1237
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+)
+"fgen.ml" 47 1201 1238 "fgen.ml" 47 1201 1239
+type(
+  int
+)
+"fgen.ml" 47 1201 1218 "fgen.ml" 47 1201 1240
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 47 1201 1204 "fgen.ml" 47 1201 1241
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 48 1242 1246 "fgen.ml" 48 1242 1258
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 48 1242 1260 "fgen.ml" 48 1242 1268
+type(
+  Smt_utils.exp_translation list -> int -> Smt_utils.exp_translation
+)
+ident(
+  ext_ref List.nth
+)
+"fgen.ml" 48 1242 1269 "fgen.ml" 48 1242 1278
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 25 556 561 "fgen.ml" 25 556 570
+)
+"fgen.ml" 48 1242 1279 "fgen.ml" 48 1242 1280
+type(
+  int
+)
+"fgen.ml" 48 1242 1259 "fgen.ml" 48 1242 1281
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 48 1242 1245 "fgen.ml" 48 1242 1282
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 44 1135 1145 "fgen.ml" 49 1283 1286
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 44 1135 1137 "fgen.ml" 49 1283 1286
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 43 1098 1100 "fgen.ml" 49 1283 1286
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 27 649 650 "fgen.ml" 50 1287 1291
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 26 612 613 "fgen.ml" 50 1287 1291
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 25 556 557 "fgen.ml" 50 1287 1291
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 51 1292 1304 "fgen.ml" 51 1292 1308
+ident(
+  def expr "fgen.ml" 52 1313 1314 "fgen.ml" 56 1448 1456
+)
+"fgen.ml" 51 1292 1303 "fgen.ml" 51 1292 1309
+type(
+  Typed_ast.t_expr
+)
+"fgen.ml" 51 1292 1296 "fgen.ml" 51 1292 1309
+type(
+  Typed_ast.t_expr_desc
+)
+"fgen.ml" 52 1313 1318 "fgen.ml" 52 1313 1325
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  def pre_exp "fgen.ml" 55 1401 1402 "fgen.ml" 56 1448 1456
+)
+"fgen.ml" 53 1329 1332 "fgen.ml" 53 1329 1347
+type(
+  Aez.Smt.Term.t ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_expr -> Smt_utils.exp_translation
+)
+ident(
+  int_ref gen_term_of_exp "fgen.ml" 13 190 198 "fgen.ml" 13 190 213
+)
+"fgen.ml" 53 1329 1349 "fgen.ml" 53 1329 1364
+type(
+  Aez.Smt.Term.operator -> Aez.Smt.Term.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_arith
+)
+"fgen.ml" 53 1329 1365 "fgen.ml" 53 1329 1375
+type(
+  Aez.Smt.Term.operator
+)
+"fgen.ml" 53 1329 1376 "fgen.ml" 53 1329 1377
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 13 190 214 "fgen.ml" 13 190 215
+)
+"fgen.ml" 53 1329 1378 "fgen.ml" 53 1329 1386
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref term_one "fgen.ml" 9 114 118 "fgen.ml" 9 114 126
+)
+"fgen.ml" 53 1329 1348 "fgen.ml" 53 1329 1387
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 53 1329 1388 "fgen.ml" 53 1329 1391
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref ids "fgen.ml" 13 190 216 "fgen.ml" 13 190 219
+)
+"fgen.ml" 53 1329 1392 "fgen.ml" 53 1329 1396
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref expr "fgen.ml" 51 1292 1303 "fgen.ml" 51 1292 1309
+)
+"fgen.ml" 53 1329 1332 "fgen.ml" 53 1329 1396
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 55 1401 1402 "fgen.ml" 55 1401 1412
+type(
+  Aez.Smt.Term.t -> Aez.Smt.Term.t Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"fgen.ml" 55 1401 1414 "fgen.ml" 55 1401 1426
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 55 1401 1427 "fgen.ml" 55 1401 1434
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  int_ref pre_exp "fgen.ml" 52 1313 1318 "fgen.ml" 52 1313 1325
+)
+"fgen.ml" 55 1401 1413 "fgen.ml" 55 1401 1435
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 55 1401 1436 "fgen.ml" 55 1401 1446
+type(
+  Aez.Smt.Term.t Stack.t
+)
+ident(
+  int_ref state_vars "fgen.ml" 11 156 160 "fgen.ml" 11 156 170
+)
+"fgen.ml" 55 1401 1402 "fgen.ml" 55 1401 1446
+call(
+  stack
+)
+type(
+  unit
+)
+"fgen.ml" 56 1448 1449 "fgen.ml" 56 1448 1456
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  int_ref pre_exp "fgen.ml" 52 1313 1318 "fgen.ml" 52 1313 1325
+)
+"fgen.ml" 55 1401 1402 "fgen.ml" 56 1448 1456
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 52 1313 1314 "fgen.ml" 56 1448 1456
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 57 1457 1471 "fgen.ml" 57 1457 1473
+type(
+  Typed_ast.t_expr
+)
+ident(
+  def e1 "fgen.ml" 58 1483 1484 "fgen.ml" 64 1676 1693
+)
+"fgen.ml" 57 1457 1475 "fgen.ml" 57 1457 1477
+type(
+  Typed_ast.t_expr
+)
+ident(
+  def e2 "fgen.ml" 58 1483 1484 "fgen.ml" 64 1676 1693
+)
+"fgen.ml" 57 1457 1461 "fgen.ml" 57 1457 1478
+type(
+  Typed_ast.t_expr_desc
+)
+"fgen.ml" 58 1483 1488 "fgen.ml" 58 1483 1490
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  def f1 "fgen.ml" 59 1521 1522 "fgen.ml" 64 1676 1693
+)
+"fgen.ml" 58 1483 1493 "fgen.ml" 58 1483 1508
+type(
+  Aez.Smt.Term.t ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_expr -> Smt_utils.exp_translation
+)
+ident(
+  int_ref gen_term_of_exp "fgen.ml" 13 190 198 "fgen.ml" 13 190 213
+)
+"fgen.ml" 58 1483 1509 "fgen.ml" 58 1483 1510
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 13 190 214 "fgen.ml" 13 190 215
+)
+"fgen.ml" 58 1483 1511 "fgen.ml" 58 1483 1514
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref ids "fgen.ml" 13 190 216 "fgen.ml" 13 190 219
+)
+"fgen.ml" 58 1483 1515 "fgen.ml" 58 1483 1517
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref e1 "fgen.ml" 57 1457 1471 "fgen.ml" 57 1457 1473
+)
+"fgen.ml" 58 1483 1493 "fgen.ml" 58 1483 1517
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 59 1521 1526 "fgen.ml" 59 1521 1528
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  def f2 "fgen.ml" 60 1559 1560 "fgen.ml" 64 1676 1693
+)
+"fgen.ml" 59 1521 1531 "fgen.ml" 59 1521 1546
+type(
+  Aez.Smt.Term.t ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_expr -> Smt_utils.exp_translation
+)
+ident(
+  int_ref gen_term_of_exp "fgen.ml" 13 190 198 "fgen.ml" 13 190 213
+)
+"fgen.ml" 59 1521 1547 "fgen.ml" 59 1521 1548
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 13 190 214 "fgen.ml" 13 190 215
+)
+"fgen.ml" 59 1521 1549 "fgen.ml" 59 1521 1552
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref ids "fgen.ml" 13 190 216 "fgen.ml" 13 190 219
+)
+"fgen.ml" 59 1521 1553 "fgen.ml" 59 1521 1555
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref e2 "fgen.ml" 57 1457 1475 "fgen.ml" 57 1457 1477
+)
+"fgen.ml" 59 1521 1531 "fgen.ml" 59 1521 1555
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 60 1559 1564 "fgen.ml" 60 1559 1568
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def term "fgen.ml" 64 1676 1680 "fgen.ml" 64 1676 1693
+)
+"fgen.ml" 60 1559 1571 "fgen.ml" 60 1559 1584
+type(
+  Aez.Smt.Formula.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_ite
+)
+"fgen.ml" 61 1585 1589 "fgen.ml" 61 1585 1605
+type(
+  Aez.Smt.Formula.comparator -> Aez.Smt.Term.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make_lit
+)
+"fgen.ml" 61 1585 1606 "fgen.ml" 61 1585 1616
+type(
+  Aez.Smt.Formula.comparator
+)
+"fgen.ml" 62 1618 1622 "fgen.ml" 62 1618 1623
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 13 190 214 "fgen.ml" 13 190 215
+)
+"fgen.ml" 62 1618 1625 "fgen.ml" 62 1618 1634
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref term_zero "fgen.ml" 8 72 76 "fgen.ml" 8 72 85
+)
+"fgen.ml" 62 1618 1621 "fgen.ml" 62 1618 1635
+type(
+  Aez.Smt.Term.t list
+)
+"fgen.ml" 61 1585 1588 "fgen.ml" 62 1618 1636
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 63 1637 1641 "fgen.ml" 63 1637 1653
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 63 1637 1654 "fgen.ml" 63 1637 1656
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  int_ref f1 "fgen.ml" 58 1483 1488 "fgen.ml" 58 1483 1490
+)
+"fgen.ml" 63 1637 1640 "fgen.ml" 63 1637 1657
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 63 1637 1659 "fgen.ml" 63 1637 1671
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 63 1637 1672 "fgen.ml" 63 1637 1674
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  int_ref f2 "fgen.ml" 59 1521 1526 "fgen.ml" 59 1521 1528
+)
+"fgen.ml" 63 1637 1658 "fgen.ml" 63 1637 1675
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 60 1559 1571 "fgen.ml" 63 1637 1675
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 64 1676 1687 "fgen.ml" 64 1676 1693
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref term "fgen.ml" 60 1559 1564 "fgen.ml" 60 1559 1568
+)
+"fgen.ml" 64 1676 1680 "fgen.ml" 64 1676 1693
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 60 1559 1560 "fgen.ml" 64 1676 1693
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 59 1521 1522 "fgen.ml" 64 1676 1693
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 58 1483 1484 "fgen.ml" 64 1676 1693
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 65 1694 1707 "fgen.ml" 65 1694 1708
+type(
+  Ident.t
+)
+ident(
+  def f "fgen.ml" 66 1717 1718 "fgen.ml" 73 1982 2046
+)
+"fgen.ml" 65 1694 1710 "fgen.ml" 65 1694 1712
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  def el "fgen.ml" 66 1717 1718 "fgen.ml" 73 1982 2046
+)
+"fgen.ml" 65 1694 1698 "fgen.ml" 65 1694 1713
+type(
+  Typed_ast.t_expr_desc
+)
+"fgen.ml" 66 1717 1722 "fgen.ml" 66 1717 1731
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  def term_list "fgen.ml" 67 1773 1774 "fgen.ml" 73 1982 2046
+)
+"fgen.ml" 66 1717 1734 "fgen.ml" 66 1717 1742
+type(
+  (Typed_ast.t_expr -> Smt_utils.exp_translation) ->
+  Typed_ast.t_expr list -> Smt_utils.exp_translation list
+)
+ident(
+  ext_ref List.map
+)
+"fgen.ml" 66 1717 1744 "fgen.ml" 66 1717 1759
+type(
+  Aez.Smt.Term.t ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_expr -> Smt_utils.exp_translation
+)
+ident(
+  int_ref gen_term_of_exp "fgen.ml" 13 190 198 "fgen.ml" 13 190 213
+)
+"fgen.ml" 66 1717 1760 "fgen.ml" 66 1717 1761
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 13 190 214 "fgen.ml" 13 190 215
+)
+"fgen.ml" 66 1717 1762 "fgen.ml" 66 1717 1765
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref ids "fgen.ml" 13 190 216 "fgen.ml" 13 190 219
+)
+"fgen.ml" 66 1717 1743 "fgen.ml" 66 1717 1766
+call(
+  stack
+)
+type(
+  Typed_ast.t_expr -> Smt_utils.exp_translation
+)
+"fgen.ml" 66 1717 1767 "fgen.ml" 66 1717 1769
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  int_ref el "fgen.ml" 65 1694 1710 "fgen.ml" 65 1694 1712
+)
+"fgen.ml" 66 1717 1734 "fgen.ml" 66 1717 1769
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation list
+)
+"fgen.ml" 67 1773 1778 "fgen.ml" 67 1773 1789
+type(
+  Aez.Smt.Type.t list
+)
+ident(
+  def input_types "fgen.ml" 71 1853 1854 "fgen.ml" 73 1982 2046
+)
+"fgen.ml" 68 1793 1796 "fgen.ml" 68 1793 1804
+type(
+  (Asttypes.base_ty -> Aez.Smt.Type.t) ->
+  Asttypes.base_ty list -> Aez.Smt.Type.t list
+)
+ident(
+  ext_ref List.map
+)
+"fgen.ml" 68 1793 1805 "fgen.ml" 68 1793 1817
+type(
+  Asttypes.base_ty -> Aez.Smt.Type.t
+)
+ident(
+  ext_ref Smt_utils.translate_ty
+)
+"fgen.ml" 69 1819 1822 "fgen.ml" 69 1819 1830
+type(
+  (Typed_ast.t_expr -> Asttypes.base_ty) ->
+  Typed_ast.t_expr list -> Asttypes.base_ty list
+)
+ident(
+  ext_ref List.map
+)
+"fgen.ml" 69 1819 1831 "fgen.ml" 69 1819 1843
+type(
+  Typed_ast.t_expr -> Asttypes.base_ty
+)
+ident(
+  ext_ref Smt_utils.type_of_expr
+)
+"fgen.ml" 69 1819 1844 "fgen.ml" 69 1819 1846
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  int_ref el "fgen.ml" 65 1694 1710 "fgen.ml" 65 1694 1712
+)
+"fgen.ml" 69 1819 1821 "fgen.ml" 69 1819 1847
+call(
+  stack
+)
+type(
+  Asttypes.base_ty list
+)
+"fgen.ml" 68 1793 1796 "fgen.ml" 69 1819 1847
+call(
+  stack
+)
+type(
+  Aez.Smt.Type.t list
+)
+"fgen.ml" 71 1853 1858 "fgen.ml" 71 1853 1869
+type(
+  Aez.Smt.Type.t
+)
+ident(
+  def output_type "fgen.ml" 72 1907 1908 "fgen.ml" 73 1982 2046
+)
+"fgen.ml" 71 1853 1872 "fgen.ml" 71 1853 1884
+type(
+  Asttypes.base_ty -> Aez.Smt.Type.t
+)
+ident(
+  ext_ref Smt_utils.translate_ty
+)
+"fgen.ml" 71 1853 1886 "fgen.ml" 71 1853 1898
+type(
+  Typed_ast.t_expr -> Asttypes.base_ty
+)
+ident(
+  ext_ref Smt_utils.type_of_expr
+)
+"fgen.ml" 71 1853 1899 "fgen.ml" 71 1853 1902
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref exp "fgen.ml" 13 190 220 "fgen.ml" 13 190 223
+)
+"fgen.ml" 71 1853 1885 "fgen.ml" 71 1853 1903
+call(
+  stack
+)
+type(
+  Asttypes.base_ty
+)
+"fgen.ml" 71 1853 1872 "fgen.ml" 71 1853 1903
+call(
+  stack
+)
+type(
+  Aez.Smt.Type.t
+)
+"fgen.ml" 72 1907 1912 "fgen.ml" 72 1907 1917
+type(
+  Aez.Hstring.t
+)
+ident(
+  def fsymb "fgen.ml" 73 1982 1983 "fgen.ml" 73 1982 2046
+)
+"fgen.ml" 72 1907 1920 "fgen.ml" 72 1907 1934
+type(
+  string -> Aez.Smt.Type.t list -> Aez.Smt.Type.t -> Aez.Hstring.t
+)
+ident(
+  ext_ref Smt_utils.declare_symbol
+)
+"fgen.ml" 72 1907 1936 "fgen.ml" 72 1907 1951
+type(
+  Ident.t -> string
+)
+ident(
+  ext_ref Ident.string_of
+)
+"fgen.ml" 72 1907 1952 "fgen.ml" 72 1907 1953
+type(
+  Ident.t
+)
+ident(
+  int_ref f "fgen.ml" 65 1694 1707 "fgen.ml" 65 1694 1708
+)
+"fgen.ml" 72 1907 1935 "fgen.ml" 72 1907 1954
+call(
+  stack
+)
+type(
+  string
+)
+"fgen.ml" 72 1907 1955 "fgen.ml" 72 1907 1966
+type(
+  Aez.Smt.Type.t list
+)
+ident(
+  int_ref input_types "fgen.ml" 67 1773 1778 "fgen.ml" 67 1773 1789
+)
+"fgen.ml" 72 1907 1967 "fgen.ml" 72 1907 1978
+type(
+  Aez.Smt.Type.t
+)
+ident(
+  int_ref output_type "fgen.ml" 71 1853 1858 "fgen.ml" 71 1853 1869
+)
+"fgen.ml" 72 1907 1920 "fgen.ml" 72 1907 1978
+call(
+  stack
+)
+type(
+  Aez.Hstring.t
+)
+"fgen.ml" 73 1982 1992 "fgen.ml" 73 1982 2005
+type(
+  Aez.Smt.Symbol.t -> Aez.Smt.Term.t list -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_app
+)
+"fgen.ml" 73 1982 2006 "fgen.ml" 73 1982 2011
+type(
+  Aez.Hstring.t
+)
+ident(
+  int_ref fsymb "fgen.ml" 72 1907 1912 "fgen.ml" 72 1907 1917
+)
+"fgen.ml" 73 1982 2013 "fgen.ml" 73 1982 2021
+type(
+  (Smt_utils.exp_translation -> Aez.Smt.Term.t) ->
+  Smt_utils.exp_translation list -> Aez.Smt.Term.t list
+)
+ident(
+  ext_ref List.map
+)
+"fgen.ml" 73 1982 2022 "fgen.ml" 73 1982 2034
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 73 1982 2035 "fgen.ml" 73 1982 2044
+type(
+  Smt_utils.exp_translation list
+)
+ident(
+  int_ref term_list "fgen.ml" 66 1717 1722 "fgen.ml" 66 1717 1731
+)
+"fgen.ml" 73 1982 2012 "fgen.ml" 73 1982 2045
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t list
+)
+"fgen.ml" 73 1982 1991 "fgen.ml" 73 1982 2046
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 73 1982 1983 "fgen.ml" 73 1982 2046
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 72 1907 1908 "fgen.ml" 73 1982 2046
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 71 1853 1854 "fgen.ml" 73 1982 2046
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 67 1773 1774 "fgen.ml" 73 1982 2046
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 66 1717 1718 "fgen.ml" 73 1982 2046
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 74 2047 2051 "fgen.ml" 74 2047 2052
+type(
+  Typed_ast.t_expr_desc
+)
+"fgen.ml" 74 2047 2056 "fgen.ml" 74 2047 2066
+type(
+  Smt_utils.fgen_error -> Smt_utils.exp_translation
+)
+ident(
+  ext_ref Smt_utils.fgen_error
+)
+"fgen.ml" 74 2047 2085 "fgen.ml" 74 2047 2090
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref exp "fgen.ml" 13 190 220 "fgen.ml" 13 190 223
+)
+"fgen.ml" 74 2047 2067 "fgen.ml" 74 2047 2091
+type(
+  Smt_utils.fgen_error
+)
+"fgen.ml" 74 2047 2056 "fgen.ml" 74 2047 2091
+call(
+  tail
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 14 226 228 "fgen.ml" 74 2047 2091
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 77 2094 2098 "fgen.ml" 77 2094 2116
+type(
+  Aez.Smt.Term.t ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_equation -> Aez.Smt.Formula.t
+)
+ident(
+  def gen_formula_of_eqn "fgen.ml" 95 2643 2643 "fgen.ml" 1 0 -1
+)
+"fgen.ml" 77 2094 2117 "fgen.ml" 77 2094 2118
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def n "fgen.ml" 77 2094 2119 "fgen.ml" 93 2637 2641
+)
+"fgen.ml" 77 2094 2119 "fgen.ml" 77 2094 2125
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  def v_to_s "fgen.ml" 77 2094 2126 "fgen.ml" 93 2637 2641
+)
+"fgen.ml" 77 2094 2138 "fgen.ml" 77 2094 2140
+type(
+  Typed_ast.t_patt
+)
+ident(
+  def tp "fgen.ml" 79 2207 2209 "fgen.ml" 93 2637 2641
+)
+"fgen.ml" 77 2094 2153 "fgen.ml" 77 2094 2155
+type(
+  Typed_ast.t_expr
+)
+ident(
+  def te "fgen.ml" 79 2207 2209 "fgen.ml" 93 2637 2641
+)
+"fgen.ml" 77 2094 2126 "fgen.ml" 77 2094 2156
+type(
+  Typed_ast.t_equation
+)
+"fgen.ml" 79 2207 2216 "fgen.ml" 79 2207 2227
+type(
+  Ident.t list -> int
+)
+ident(
+  ext_ref List.length
+)
+"fgen.ml" 79 2207 2228 "fgen.ml" 79 2207 2230
+type(
+  Typed_ast.t_patt
+)
+ident(
+  int_ref tp "fgen.ml" 77 2094 2138 "fgen.ml" 77 2094 2140
+)
+"fgen.ml" 79 2207 2228 "fgen.ml" 79 2207 2241
+type(
+  Ident.t list
+)
+"fgen.ml" 79 2207 2216 "fgen.ml" 79 2207 2241
+call(
+  stack
+)
+type(
+  int
+)
+"fgen.ml" 79 2207 2242 "fgen.ml" 79 2207 2243
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"fgen.ml" 79 2207 2244 "fgen.ml" 79 2207 2245
+type(
+  int
+)
+"fgen.ml" 79 2207 2215 "fgen.ml" 79 2207 2246
+type(
+  bool
+)
+"fgen.ml" 79 2207 2209 "fgen.ml" 79 2207 2246
+type(
+  unit
+)
+"fgen.ml" 80 2248 2254 "fgen.ml" 80 2248 2256
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  def rf "fgen.ml" 81 2290 2292 "fgen.ml" 93 2637 2641
+)
+"fgen.ml" 80 2248 2259 "fgen.ml" 80 2248 2274
+type(
+  Aez.Smt.Term.t ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_expr -> Smt_utils.exp_translation
+)
+ident(
+  int_ref gen_term_of_exp "fgen.ml" 13 190 198 "fgen.ml" 13 190 213
+)
+"fgen.ml" 80 2248 2275 "fgen.ml" 80 2248 2276
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 77 2094 2117 "fgen.ml" 77 2094 2118
+)
+"fgen.ml" 80 2248 2277 "fgen.ml" 80 2248 2283
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref v_to_s "fgen.ml" 77 2094 2119 "fgen.ml" 77 2094 2125
+)
+"fgen.ml" 80 2248 2284 "fgen.ml" 80 2248 2286
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref te "fgen.ml" 77 2094 2153 "fgen.ml" 77 2094 2155
+)
+"fgen.ml" 80 2248 2259 "fgen.ml" 80 2248 2286
+call(
+  stack
+)
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 81 2290 2296 "fgen.ml" 81 2290 2297
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def x "fgen.ml" 84 2370 2372 "fgen.ml" 93 2637 2641
+)
+"fgen.ml" 81 2290 2300 "fgen.ml" 81 2290 2313
+type(
+  Aez.Smt.Symbol.t -> Aez.Smt.Term.t list -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_app
+)
+"fgen.ml" 82 2315 2317 "fgen.ml" 82 2315 2324
+type(
+  Smt_utils.VarToSymbols.key ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t -> Aez.Smt.Symbol.t
+)
+ident(
+  ext_ref Smt_utils.find_id
+)
+"fgen.ml" 82 2315 2326 "fgen.ml" 82 2315 2334
+type(
+  Smt_utils.VarToSymbols.key list -> int -> Smt_utils.VarToSymbols.key
+)
+ident(
+  ext_ref List.nth
+)
+"fgen.ml" 82 2315 2335 "fgen.ml" 82 2315 2337
+type(
+  Typed_ast.t_patt
+)
+ident(
+  int_ref tp "fgen.ml" 77 2094 2138 "fgen.ml" 77 2094 2140
+)
+"fgen.ml" 82 2315 2335 "fgen.ml" 82 2315 2348
+type(
+  Smt_utils.VarToSymbols.key list
+)
+"fgen.ml" 82 2315 2349 "fgen.ml" 82 2315 2350
+type(
+  int
+)
+"fgen.ml" 82 2315 2325 "fgen.ml" 82 2315 2351
+call(
+  stack
+)
+type(
+  Smt_utils.VarToSymbols.key
+)
+"fgen.ml" 82 2315 2352 "fgen.ml" 82 2315 2358
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref v_to_s "fgen.ml" 77 2094 2119 "fgen.ml" 77 2094 2125
+)
+"fgen.ml" 82 2315 2316 "fgen.ml" 82 2315 2359
+call(
+  stack
+)
+type(
+  Aez.Smt.Symbol.t
+)
+"fgen.ml" 82 2315 2361 "fgen.ml" 82 2315 2362
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 77 2094 2117 "fgen.ml" 77 2094 2118
+)
+"fgen.ml" 82 2315 2360 "fgen.ml" 82 2315 2363
+type(
+  Aez.Smt.Term.t list
+)
+"fgen.ml" 81 2290 2300 "fgen.ml" 82 2315 2363
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 84 2370 2378 "fgen.ml" 84 2370 2380
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  int_ref rf "fgen.ml" 80 2248 2254 "fgen.ml" 80 2248 2256
+)
+"fgen.ml" 85 2387 2399 "fgen.ml" 85 2387 2400
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def t "fgen.ml" 86 2405 2406 "fgen.ml" 86 2405 2456
+)
+"fgen.ml" 85 2387 2391 "fgen.ml" 85 2387 2400
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 86 2405 2406 "fgen.ml" 86 2405 2422
+type(
+  Aez.Smt.Formula.comparator -> Aez.Smt.Term.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make_lit
+)
+"fgen.ml" 86 2405 2423 "fgen.ml" 86 2405 2433
+type(
+  Aez.Smt.Formula.comparator
+)
+"fgen.ml" 86 2405 2435 "fgen.ml" 86 2405 2436
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref x "fgen.ml" 81 2290 2296 "fgen.ml" 81 2290 2297
+)
+"fgen.ml" 86 2405 2439 "fgen.ml" 86 2405 2451
+type(
+  Smt_utils.exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Smt_utils.extract_term
+)
+"fgen.ml" 86 2405 2452 "fgen.ml" 86 2405 2454
+type(
+  Smt_utils.exp_translation
+)
+ident(
+  int_ref rf "fgen.ml" 80 2248 2254 "fgen.ml" 80 2248 2256
+)
+"fgen.ml" 86 2405 2438 "fgen.ml" 86 2405 2455
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 86 2405 2434 "fgen.ml" 86 2405 2456
+type(
+  Aez.Smt.Term.t list
+)
+"fgen.ml" 86 2405 2406 "fgen.ml" 86 2405 2456
+call(
+  tail
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 87 2457 2472 "fgen.ml" 87 2457 2473
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f "fgen.ml" 88 2477 2478 "fgen.ml" 93 2637 2641
+)
+"fgen.ml" 87 2457 2461 "fgen.ml" 87 2457 2473
+type(
+  Smt_utils.exp_translation
+)
+"fgen.ml" 88 2477 2482 "fgen.ml" 88 2477 2484
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def fx "fgen.ml" 89 2535 2536 "fgen.ml" 93 2637 2641
+)
+"fgen.ml" 88 2477 2487 "fgen.ml" 88 2477 2503
+type(
+  Aez.Smt.Formula.comparator -> Aez.Smt.Term.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make_lit
+)
+"fgen.ml" 88 2477 2504 "fgen.ml" 88 2477 2514
+type(
+  Aez.Smt.Formula.comparator
+)
+"fgen.ml" 88 2477 2516 "fgen.ml" 88 2477 2517
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref x "fgen.ml" 81 2290 2296 "fgen.ml" 81 2290 2297
+)
+"fgen.ml" 88 2477 2519 "fgen.ml" 88 2477 2530
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.t_true
+)
+"fgen.ml" 88 2477 2515 "fgen.ml" 88 2477 2531
+type(
+  Aez.Smt.Term.t list
+)
+"fgen.ml" 88 2477 2487 "fgen.ml" 88 2477 2531
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 89 2535 2536 "fgen.ml" 89 2535 2548
+type(
+  Aez.Smt.Formula.combinator -> Aez.Smt.Formula.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make
+)
+"fgen.ml" 89 2535 2549 "fgen.ml" 89 2535 2560
+type(
+  Aez.Smt.Formula.combinator
+)
+"fgen.ml" 91 2566 2568 "fgen.ml" 91 2566 2580
+type(
+  Aez.Smt.Formula.combinator -> Aez.Smt.Formula.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make
+)
+"fgen.ml" 91 2566 2581 "fgen.ml" 91 2566 2592
+type(
+  Aez.Smt.Formula.combinator
+)
+"fgen.ml" 91 2566 2594 "fgen.ml" 91 2566 2596
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref fx "fgen.ml" 88 2477 2482 "fgen.ml" 88 2477 2484
+)
+"fgen.ml" 91 2566 2598 "fgen.ml" 91 2566 2599
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f "fgen.ml" 87 2457 2472 "fgen.ml" 87 2457 2473
+)
+"fgen.ml" 91 2566 2593 "fgen.ml" 91 2566 2600
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 91 2566 2568 "fgen.ml" 91 2566 2600
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 92 2602 2604 "fgen.ml" 92 2602 2616
+type(
+  Aez.Smt.Formula.combinator -> Aez.Smt.Formula.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make
+)
+"fgen.ml" 92 2602 2617 "fgen.ml" 92 2602 2628
+type(
+  Aez.Smt.Formula.combinator
+)
+"fgen.ml" 92 2602 2630 "fgen.ml" 92 2602 2631
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f "fgen.ml" 87 2457 2472 "fgen.ml" 87 2457 2473
+)
+"fgen.ml" 92 2602 2633 "fgen.ml" 92 2602 2635
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref fx "fgen.ml" 88 2477 2482 "fgen.ml" 88 2477 2484
+)
+"fgen.ml" 92 2602 2629 "fgen.ml" 92 2602 2636
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 92 2602 2604 "fgen.ml" 92 2602 2636
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 90 2561 2564 "fgen.ml" 93 2637 2641
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 89 2535 2536 "fgen.ml" 93 2637 2641
+call(
+  tail
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 88 2477 2478 "fgen.ml" 93 2637 2641
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 84 2370 2372 "fgen.ml" 93 2637 2641
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 81 2290 2292 "fgen.ml" 93 2637 2641
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 80 2248 2250 "fgen.ml" 93 2637 2641
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 79 2207 2209 "fgen.ml" 93 2637 2641
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 95 2643 2647 "fgen.ml" 95 2643 2663
+type(
+  Typed_ast.t_node ->
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t) *
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t)
+)
+ident(
+  def gen_formula_node "fgen.ml" 118 3301 3322 "fgen.ml" 1 0 -1
+)
+"fgen.ml" 95 2643 2664 "fgen.ml" 95 2643 2668
+type(
+  Typed_ast.t_node
+)
+ident(
+  def node "fgen.ml" 97 2744 2746 "fgen.ml" 118 3301 3322
+)
+"fgen.ml" 97 2744 2750 "fgen.ml" 97 2744 2760
+type(
+  Aez.Hstring.t Smt_utils.VarToSymbols.t
+)
+ident(
+  def symbol_map "fgen.ml" 101 2866 2868 "fgen.ml" 118 3301 3322
+)
+"fgen.ml" 98 2764 2765 "fgen.ml" 98 2764 2780
+type(
+  Typed_ast.typed_var list -> Aez.Hstring.t Smt_utils.VarToSymbols.t
+)
+ident(
+  ext_ref Smt_utils.declare_symbols
+)
+"fgen.ml" 98 2764 2783 "fgen.ml" 98 2764 2787
+type(
+  Typed_ast.t_node
+)
+ident(
+  int_ref node "fgen.ml" 95 2643 2664 "fgen.ml" 95 2643 2668
+)
+"fgen.ml" 98 2764 2782 "fgen.ml" 98 2764 2797
+type(
+  Typed_ast.typed_var list
+)
+"fgen.ml" 98 2764 2797 "fgen.ml" 98 2764 2798
+type(
+  Typed_ast.typed_var list ->
+  Typed_ast.typed_var list -> Typed_ast.typed_var list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"fgen.ml" 98 2764 2799 "fgen.ml" 98 2764 2803
+type(
+  Typed_ast.t_node
+)
+ident(
+  int_ref node "fgen.ml" 95 2643 2664 "fgen.ml" 95 2643 2668
+)
+"fgen.ml" 98 2764 2798 "fgen.ml" 98 2764 2814
+type(
+  Typed_ast.typed_var list
+)
+"fgen.ml" 98 2764 2814 "fgen.ml" 98 2764 2815
+type(
+  Typed_ast.typed_var list ->
+  Typed_ast.typed_var list -> Typed_ast.typed_var list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"fgen.ml" 98 2764 2816 "fgen.ml" 98 2764 2820
+type(
+  Typed_ast.t_node
+)
+ident(
+  int_ref node "fgen.ml" 95 2643 2664 "fgen.ml" 95 2643 2668
+)
+"fgen.ml" 98 2764 2815 "fgen.ml" 98 2764 2830
+type(
+  Typed_ast.typed_var list
+)
+"fgen.ml" 98 2764 2798 "fgen.ml" 98 2764 2830
+call(
+  stack
+)
+type(
+  Typed_ast.typed_var list
+)
+"fgen.ml" 98 2764 2781 "fgen.ml" 98 2764 2831
+call(
+  stack
+)
+type(
+  Typed_ast.typed_var list
+)
+"fgen.ml" 98 2764 2765 "fgen.ml" 98 2764 2831
+call(
+  stack
+)
+type(
+  Aez.Hstring.t Smt_utils.VarToSymbols.t
+)
+"fgen.ml" 101 2866 2876 "fgen.ml" 101 2866 2882
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_equation list -> Aez.Smt.Term.t -> Aez.Smt.Formula.t list
+)
+ident(
+  def aux_el "fgen.ml" 101 2866 2868 "fgen.ml" 118 3301 3322
+)
+"fgen.ml" 101 2866 2883 "fgen.ml" 101 2866 2889
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  def v_to_s "fgen.ml" 101 2866 2890 "fgen.ml" 106 3000 3034
+)
+"fgen.ml" 101 2866 2890 "fgen.ml" 101 2866 2898
+type(
+  Typed_ast.t_equation list
+)
+ident(
+  def eqn_list "fgen.ml" 101 2866 2899 "fgen.ml" 106 3000 3034
+)
+"fgen.ml" 101 2866 2899 "fgen.ml" 101 2866 2900
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def n "fgen.ml" 102 2903 2904 "fgen.ml" 106 3000 3034
+)
+"fgen.ml" 102 2903 2910 "fgen.ml" 102 2903 2918
+type(
+  Typed_ast.t_equation list
+)
+ident(
+  int_ref eqn_list "fgen.ml" 101 2866 2890 "fgen.ml" 101 2866 2898
+)
+"fgen.ml" 103 2924 2927 "fgen.ml" 103 2924 2929
+type(
+  Typed_ast.t_equation list
+)
+"fgen.ml" 103 2924 2934 "fgen.ml" 103 2924 2936
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 104 2937 2940 "fgen.ml" 104 2937 2942
+type(
+  Typed_ast.t_equation
+)
+ident(
+  def hd "fgen.ml" 105 2952 2955 "fgen.ml" 106 3000 3034
+)
+"fgen.ml" 104 2937 2946 "fgen.ml" 104 2937 2948
+type(
+  Typed_ast.t_equation list
+)
+ident(
+  def tl "fgen.ml" 105 2952 2955 "fgen.ml" 106 3000 3034
+)
+"fgen.ml" 104 2937 2940 "fgen.ml" 104 2937 2948
+type(
+  Typed_ast.t_equation list
+)
+"fgen.ml" 105 2952 2959 "fgen.ml" 105 2952 2963
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def hd_f "fgen.ml" 106 3000 3004 "fgen.ml" 106 3000 3034
+)
+"fgen.ml" 105 2952 2966 "fgen.ml" 105 2952 2984
+type(
+  Aez.Smt.Term.t ->
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_equation -> Aez.Smt.Formula.t
+)
+ident(
+  int_ref gen_formula_of_eqn "fgen.ml" 77 2094 2098 "fgen.ml" 77 2094 2116
+)
+"fgen.ml" 105 2952 2985 "fgen.ml" 105 2952 2986
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 101 2866 2899 "fgen.ml" 101 2866 2900
+)
+"fgen.ml" 105 2952 2987 "fgen.ml" 105 2952 2993
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref v_to_s "fgen.ml" 101 2866 2883 "fgen.ml" 101 2866 2889
+)
+"fgen.ml" 105 2952 2994 "fgen.ml" 105 2952 2996
+type(
+  Typed_ast.t_equation
+)
+ident(
+  int_ref hd "fgen.ml" 104 2937 2940 "fgen.ml" 104 2937 2942
+)
+"fgen.ml" 105 2952 2966 "fgen.ml" 105 2952 2996
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 106 3000 3004 "fgen.ml" 106 3000 3010
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref hd_f "fgen.ml" 105 2952 2959 "fgen.ml" 105 2952 2963
+)
+"fgen.ml" 106 3000 3015 "fgen.ml" 106 3000 3021
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_equation list -> Aez.Smt.Term.t -> Aez.Smt.Formula.t list
+)
+ident(
+  int_ref aux_el "fgen.ml" 101 2866 2876 "fgen.ml" 101 2866 2882
+)
+"fgen.ml" 106 3000 3022 "fgen.ml" 106 3000 3028
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref v_to_s "fgen.ml" 101 2866 2883 "fgen.ml" 101 2866 2889
+)
+"fgen.ml" 106 3000 3029 "fgen.ml" 106 3000 3031
+type(
+  Typed_ast.t_equation list
+)
+ident(
+  int_ref tl "fgen.ml" 104 2937 2946 "fgen.ml" 104 2937 2948
+)
+"fgen.ml" 106 3000 3032 "fgen.ml" 106 3000 3033
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 101 2866 2899 "fgen.ml" 101 2866 2900
+)
+"fgen.ml" 106 3000 3014 "fgen.ml" 106 3000 3034
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 106 3000 3004 "fgen.ml" 106 3000 3034
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 105 2952 2955 "fgen.ml" 106 3000 3034
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 102 2903 2904 "fgen.ml" 106 3000 3034
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 109 3070 3076 "fgen.ml" 109 3070 3082
+type(
+  Aez.Smt.Term.t -> Aez.Smt.Formula.t
+)
+ident(
+  def def_ok "fgen.ml" 117 3227 3229 "fgen.ml" 118 3301 3322
+)
+"fgen.ml" 109 3070 3083 "fgen.ml" 109 3070 3084
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def n "fgen.ml" 110 3088 3089 "fgen.ml" 115 3217 3221
+)
+"fgen.ml" 110 3088 3089 "fgen.ml" 110 3088 3105
+type(
+  Aez.Smt.Formula.comparator -> Aez.Smt.Term.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make_lit
+)
+"fgen.ml" 110 3088 3106 "fgen.ml" 110 3088 3116
+type(
+  Aez.Smt.Formula.comparator
+)
+"fgen.ml" 112 3122 3124 "fgen.ml" 112 3122 3137
+type(
+  Aez.Smt.Symbol.t -> Aez.Smt.Term.t list -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_app
+)
+"fgen.ml" 112 3122 3139 "fgen.ml" 112 3122 3146
+type(
+  Smt_utils.VarToSymbols.key ->
+  Aez.Hstring.t Smt_utils.VarToSymbols.t -> Aez.Hstring.t
+)
+ident(
+  ext_ref Smt_utils.find_id
+)
+"fgen.ml" 112 3122 3148 "fgen.ml" 112 3122 3151
+type(
+  Typed_ast.typed_var -> Smt_utils.VarToSymbols.key
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"fgen.ml" 112 3122 3153 "fgen.ml" 112 3122 3161
+type(
+  Typed_ast.typed_var list -> int -> Typed_ast.typed_var
+)
+ident(
+  ext_ref List.nth
+)
+"fgen.ml" 112 3122 3162 "fgen.ml" 112 3122 3166
+type(
+  Typed_ast.t_node
+)
+ident(
+  int_ref node "fgen.ml" 95 2643 2664 "fgen.ml" 95 2643 2668
+)
+"fgen.ml" 112 3122 3162 "fgen.ml" 112 3122 3176
+type(
+  Typed_ast.typed_var list
+)
+"fgen.ml" 112 3122 3177 "fgen.ml" 112 3122 3178
+type(
+  int
+)
+"fgen.ml" 112 3122 3152 "fgen.ml" 112 3122 3179
+call(
+  stack
+)
+type(
+  Typed_ast.typed_var
+)
+"fgen.ml" 112 3122 3147 "fgen.ml" 112 3122 3180
+type(
+  Smt_utils.VarToSymbols.key
+)
+"fgen.ml" 112 3122 3181 "fgen.ml" 112 3122 3191
+type(
+  Aez.Hstring.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref symbol_map "fgen.ml" 97 2744 2750 "fgen.ml" 97 2744 2760
+)
+"fgen.ml" 112 3122 3138 "fgen.ml" 112 3122 3192
+call(
+  stack
+)
+type(
+  Aez.Hstring.t
+)
+"fgen.ml" 113 3194 3199 "fgen.ml" 113 3194 3200
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 109 3070 3083 "fgen.ml" 109 3070 3084
+)
+"fgen.ml" 113 3194 3198 "fgen.ml" 113 3194 3201
+type(
+  Aez.Smt.Term.t list
+)
+"fgen.ml" 112 3122 3124 "fgen.ml" 113 3194 3201
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"fgen.ml" 114 3203 3205 "fgen.ml" 114 3203 3216
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.t_true
+)
+"fgen.ml" 111 3117 3120 "fgen.ml" 115 3217 3221
+type(
+  Aez.Smt.Term.t list
+)
+"fgen.ml" 110 3088 3089 "fgen.ml" 115 3217 3221
+call(
+  tail
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 117 3227 3234 "fgen.ml" 117 3227 3235
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def n "fgen.ml" 117 3227 3239 "fgen.ml" 117 3227 3298
+)
+"fgen.ml" 117 3227 3239 "fgen.ml" 117 3227 3251
+type(
+  Aez.Smt.Formula.combinator -> Aez.Smt.Formula.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make
+)
+"fgen.ml" 117 3227 3252 "fgen.ml" 117 3227 3263
+type(
+  Aez.Smt.Formula.combinator
+)
+"fgen.ml" 117 3227 3265 "fgen.ml" 117 3227 3271
+type(
+  Aez.Smt.Symbol.t Smt_utils.VarToSymbols.t ->
+  Typed_ast.t_equation list -> Aez.Smt.Term.t -> Aez.Smt.Formula.t list
+)
+ident(
+  int_ref aux_el "fgen.ml" 101 2866 2876 "fgen.ml" 101 2866 2882
+)
+"fgen.ml" 117 3227 3272 "fgen.ml" 117 3227 3282
+type(
+  Aez.Hstring.t Smt_utils.VarToSymbols.t
+)
+ident(
+  int_ref symbol_map "fgen.ml" 97 2744 2750 "fgen.ml" 97 2744 2760
+)
+"fgen.ml" 117 3227 3283 "fgen.ml" 117 3227 3287
+type(
+  Typed_ast.t_node
+)
+ident(
+  int_ref node "fgen.ml" 95 2643 2664 "fgen.ml" 95 2643 2668
+)
+"fgen.ml" 117 3227 3283 "fgen.ml" 117 3227 3295
+type(
+  Typed_ast.t_equation list
+)
+"fgen.ml" 117 3227 3296 "fgen.ml" 117 3227 3297
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 117 3227 3234 "fgen.ml" 117 3227 3235
+)
+"fgen.ml" 117 3227 3264 "fgen.ml" 117 3227 3298
+call(
+  stack
+)
+type(
+  Aez.Smt.Formula.t list
+)
+"fgen.ml" 117 3227 3239 "fgen.ml" 117 3227 3298
+call(
+  tail
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 117 3227 3229 "fgen.ml" 117 3227 3299
+type(
+  Aez.Smt.Term.t -> Aez.Smt.Formula.t
+)
+"fgen.ml" 118 3301 3308 "fgen.ml" 118 3301 3309
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def n "fgen.ml" 118 3301 3313 "fgen.ml" 118 3301 3321
+)
+"fgen.ml" 118 3301 3313 "fgen.ml" 118 3301 3319
+type(
+  Aez.Smt.Term.t -> Aez.Smt.Formula.t
+)
+ident(
+  int_ref def_ok "fgen.ml" 109 3070 3076 "fgen.ml" 109 3070 3082
+)
+"fgen.ml" 118 3301 3320 "fgen.ml" 118 3301 3321
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref n "fgen.ml" 118 3301 3308 "fgen.ml" 118 3301 3309
+)
+"fgen.ml" 118 3301 3313 "fgen.ml" 118 3301 3321
+call(
+  tail
+)
+type(
+  Aez.Smt.Formula.t
+)
+"fgen.ml" 118 3301 3303 "fgen.ml" 118 3301 3322
+type(
+  Aez.Smt.Term.t -> Aez.Smt.Formula.t
+)
+"fgen.ml" 117 3227 3229 "fgen.ml" 118 3301 3322
+type(
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t) *
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t)
+)
+"fgen.ml" 109 3070 3072 "fgen.ml" 118 3301 3322
+type(
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t) *
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t)
+)
+"fgen.ml" 101 2866 2868 "fgen.ml" 118 3301 3322
+type(
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t) *
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t)
+)
+"fgen.ml" 97 2744 2746 "fgen.ml" 118 3301 3322
+type(
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t) *
+  (Aez.Smt.Term.t -> Aez.Smt.Formula.t)
+)

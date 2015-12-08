@@ -1,0 +1,368 @@
+"ident.ml" 11 106 110 "ident.ml" 11 106 114
+type(
+  string -> kind -> t
+)
+ident(
+  def make "ident.ml" 19 223 223 "ident.ml" 1 0 -1
+)
+"ident.ml" 12 117 123 "ident.ml" 12 117 126
+type(
+  int ref
+)
+ident(
+  def cpt "ident.ml" 13 138 140 "ident.ml" 17 201 221
+)
+"ident.ml" 12 117 129 "ident.ml" 12 117 132
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ident.ml" 12 117 133 "ident.ml" 12 117 134
+type(
+  int
+)
+"ident.ml" 12 117 129 "ident.ml" 12 117 134
+type(
+  int ref
+)
+"ident.ml" 13 138 144 "ident.ml" 13 138 145
+type(
+  string
+)
+ident(
+  def s "ident.ml" 13 138 146 "ident.ml" 17 201 221
+)
+"ident.ml" 13 138 146 "ident.ml" 13 138 150
+type(
+  kind
+)
+ident(
+  def kind "ident.ml" 14 154 158 "ident.ml" 17 201 221
+)
+"ident.ml" 14 154 158 "ident.ml" 14 154 162
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"ident.ml" 14 154 163 "ident.ml" 14 154 166
+type(
+  int ref
+)
+ident(
+  int_ref cpt "ident.ml" 12 117 123 "ident.ml" 12 117 126
+)
+"ident.ml" 14 154 158 "ident.ml" 14 154 166
+type(
+  unit
+)
+"ident.ml" 15 168 179 "ident.ml" 15 168 180
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ident.ml" 15 168 180 "ident.ml" 15 168 183
+type(
+  int ref
+)
+ident(
+  int_ref cpt "ident.ml" 12 117 123 "ident.ml" 12 117 126
+)
+"ident.ml" 15 168 179 "ident.ml" 15 168 183
+type(
+  int
+)
+"ident.ml" 16 185 198 "ident.ml" 16 185 199
+type(
+  string
+)
+ident(
+  int_ref s "ident.ml" 13 138 144 "ident.ml" 13 138 145
+)
+"ident.ml" 17 201 214 "ident.ml" 17 201 218
+type(
+  kind
+)
+ident(
+  int_ref kind "ident.ml" 13 138 146 "ident.ml" 13 138 150
+)
+"ident.ml" 15 168 172 "ident.ml" 17 201 221
+type(
+  t
+)
+"ident.ml" 14 154 158 "ident.ml" 17 201 221
+type(
+  t
+)
+"ident.ml" 13 138 140 "ident.ml" 17 201 221
+type(
+  string -> kind -> t
+)
+"ident.ml" 12 117 119 "ident.ml" 17 201 221
+type(
+  string -> kind -> t
+)
+"ident.ml" 19 223 227 "ident.ml" 19 223 234
+type(
+  'a -> 'a -> int
+)
+ident(
+  def compare "ident.ml" 21 257 257 "ident.ml" 1 0 -1
+)
+"ident.ml" 19 223 237 "ident.ml" 19 223 255
+type(
+  'a -> 'a -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"ident.ml" 21 257 261 "ident.ml" 21 257 266
+type(
+  Format.formatter -> t -> unit
+)
+ident(
+  def print "ident.ml" 25 330 330 "ident.ml" 1 0 -1
+)
+"ident.ml" 21 257 267 "ident.ml" 21 257 270
+type(
+  Format.formatter
+)
+ident(
+  def fmt "ident.ml" 21 257 271 "ident.ml" 22 275 316
+)
+"ident.ml" 21 257 271 "ident.ml" 21 257 272
+type(
+  t
+)
+ident(
+  def x "ident.ml" 22 275 277 "ident.ml" 22 275 316
+)
+"ident.ml" 22 275 277 "ident.ml" 22 275 291
+type(
+  Format.formatter ->
+  (string -> int -> unit, Format.formatter, unit) format ->
+  string -> int -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ident.ml" 22 275 292 "ident.ml" 22 275 295
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "ident.ml" 21 257 267 "ident.ml" 21 257 270
+)
+"ident.ml" 22 275 296 "ident.ml" 22 275 304
+type(
+  (string -> int -> unit, Format.formatter, unit) format
+)
+"ident.ml" 22 275 305 "ident.ml" 22 275 306
+type(
+  t
+)
+ident(
+  int_ref x "ident.ml" 21 257 271 "ident.ml" 21 257 272
+)
+"ident.ml" 22 275 305 "ident.ml" 22 275 311
+type(
+  string
+)
+"ident.ml" 22 275 312 "ident.ml" 22 275 313
+type(
+  t
+)
+ident(
+  int_ref x "ident.ml" 21 257 271 "ident.ml" 21 257 272
+)
+"ident.ml" 22 275 312 "ident.ml" 22 275 316
+type(
+  int
+)
+"ident.ml" 22 275 277 "ident.ml" 22 275 316
+call(
+  tail
+)
+type(
+  unit
+)
+"ident.ml" 25 330 334 "ident.ml" 25 330 349
+type(
+  (Format.formatter -> 'a -> 'b) -> 'a -> string
+)
+ident(
+  def print_to_string "ident.ml" 31 511 511 "ident.ml" 1 0 -1
+)
+"ident.ml" 25 330 350 "ident.ml" 25 330 355
+type(
+  Format.formatter -> 'a -> 'b
+)
+ident(
+  def print "ident.ml" 25 330 356 "ident.ml" 29 478 509
+)
+"ident.ml" 25 330 356 "ident.ml" 25 330 357
+type(
+  'a
+)
+ident(
+  def x "ident.ml" 26 360 362 "ident.ml" 29 478 509
+)
+"ident.ml" 26 360 362 "ident.ml" 26 360 368
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"ident.ml" 26 360 370 "ident.ml" 26 360 396
+type(
+  unit -> string
+)
+ident(
+  ext_ref Format.flush_str_formatter
+)
+"ident.ml" 26 360 397 "ident.ml" 26 360 399
+type(
+  unit
+)
+"ident.ml" 26 360 369 "ident.ml" 26 360 400
+call(
+  stack
+)
+type(
+  string
+)
+"ident.ml" 26 360 362 "ident.ml" 26 360 400
+type(
+  unit
+)
+"ident.ml" 27 402 404 "ident.ml" 27 402 409
+type(
+  Format.formatter -> 'a -> 'b
+)
+ident(
+  int_ref print "ident.ml" 25 330 350 "ident.ml" 25 330 355
+)
+"ident.ml" 27 402 410 "ident.ml" 27 402 430
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.str_formatter
+)
+"ident.ml" 27 402 431 "ident.ml" 27 402 432
+type(
+  'a
+)
+ident(
+  int_ref x "ident.ml" 25 330 356 "ident.ml" 25 330 357
+)
+"ident.ml" 27 402 404 "ident.ml" 27 402 432
+call(
+  stack
+)
+type(
+  'b
+)
+"ident.ml" 28 434 436 "ident.ml" 28 434 450
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ident.ml" 28 434 451 "ident.ml" 28 434 471
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.str_formatter
+)
+"ident.ml" 28 434 472 "ident.ml" 28 434 476
+type(
+  (unit, Format.formatter, unit) format
+)
+"ident.ml" 28 434 436 "ident.ml" 28 434 476
+call(
+  stack
+)
+type(
+  unit
+)
+"ident.ml" 29 478 480 "ident.ml" 29 478 506
+type(
+  unit -> string
+)
+ident(
+  ext_ref Format.flush_str_formatter
+)
+"ident.ml" 29 478 507 "ident.ml" 29 478 509
+type(
+  unit
+)
+"ident.ml" 29 478 480 "ident.ml" 29 478 509
+call(
+  tail
+)
+type(
+  string
+)
+"ident.ml" 28 434 436 "ident.ml" 29 478 509
+type(
+  string
+)
+"ident.ml" 27 402 404 "ident.ml" 29 478 509
+type(
+  string
+)
+"ident.ml" 26 360 362 "ident.ml" 29 478 509
+type(
+  string
+)
+"ident.ml" 31 511 515 "ident.ml" 31 511 524
+type(
+  t -> string
+)
+ident(
+  def string_of "ident.ml" 31 511 552 "ident.ml" 1 0 -1
+)
+"ident.ml" 31 511 525 "ident.ml" 31 511 526
+type(
+  t
+)
+ident(
+  def x "ident.ml" 31 511 529 "ident.ml" 31 511 552
+)
+"ident.ml" 31 511 529 "ident.ml" 31 511 544
+type(
+  (Format.formatter -> t -> unit) -> t -> string
+)
+ident(
+  int_ref print_to_string "ident.ml" 25 330 334 "ident.ml" 25 330 349
+)
+"ident.ml" 31 511 545 "ident.ml" 31 511 550
+type(
+  Format.formatter -> t -> unit
+)
+ident(
+  int_ref print "ident.ml" 21 257 261 "ident.ml" 21 257 266
+)
+"ident.ml" 31 511 551 "ident.ml" 31 511 552
+type(
+  t
+)
+ident(
+  int_ref x "ident.ml" 31 511 525 "ident.ml" 31 511 526
+)
+"ident.ml" 31 511 529 "ident.ml" 31 511 552
+call(
+  tail
+)
+type(
+  string
+)

@@ -1,0 +1,80 @@
+"config.ml" 1 0 4 "config.ml" 1 0 13
+type(
+  Format.formatter
+)
+ident(
+  def formatter "config.ml" 3 38 38 "config.ml" 1 0 -1
+)
+"config.ml" 1 0 16 "config.ml" 1 0 36
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.std_formatter
+)
+"config.ml" 3 38 42 "config.ml" 3 38 46
+type(
+  string
+)
+ident(
+  def cdef "config.ml" 4 59 59 "config.ml" 1 0 -1
+)
+"config.ml" 3 38 49 "config.ml" 3 38 58
+type(
+  string
+)
+"config.ml" 4 59 63 "config.ml" 4 59 67
+type(
+  string
+)
+ident(
+  def cred "config.ml" 5 81 81 "config.ml" 1 0 -1
+)
+"config.ml" 4 59 70 "config.ml" 4 59 80
+type(
+  string
+)
+"config.ml" 5 81 85 "config.ml" 5 81 90
+type(
+  string
+)
+ident(
+  def cblue "config.ml" 6 104 104 "config.ml" 1 0 -1
+)
+"config.ml" 5 81 93 "config.ml" 5 81 103
+type(
+  string
+)
+"config.ml" 6 104 108 "config.ml" 6 104 118
+type(
+  string
+)
+ident(
+  def clightgray "config.ml" 7 132 132 "config.ml" 1 0 -1
+)
+"config.ml" 6 104 121 "config.ml" 6 104 131
+type(
+  string
+)
+"config.ml" 7 132 136 "config.ml" 7 132 141
+type(
+  string
+)
+ident(
+  def cbold "config.ml" 8 154 154 "config.ml" 1 0 -1
+)
+"config.ml" 7 132 144 "config.ml" 7 132 153
+type(
+  string
+)
+"config.ml" 8 154 158 "config.ml" 8 154 167
+type(
+  string
+)
+ident(
+  def cdarkgray "config.ml" 8 154 182 "config.ml" 1 0 -1
+)
+"config.ml" 8 154 170 "config.ml" 8 154 182
+type(
+  string
+)

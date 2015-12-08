@@ -1,0 +1,2728 @@
+"smt_utils.ml" 10 96 100 "smt_utils.ml" 10 96 104
+type(
+  int -> Aez.Smt.Term.t
+)
+ident(
+  def tofi "smt_utils.ml" 11 135 135 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 10 96 105 "smt_utils.ml" 10 96 106
+type(
+  int
+)
+ident(
+  def i "smt_utils.ml" 10 96 109 "smt_utils.ml" 10 96 134
+)
+"smt_utils.ml" 10 96 109 "smt_utils.ml" 10 96 122
+type(
+  Num.num -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_int
+)
+"smt_utils.ml" 10 96 132 "smt_utils.ml" 10 96 133
+type(
+  int
+)
+ident(
+  int_ref i "smt_utils.ml" 10 96 105 "smt_utils.ml" 10 96 106
+)
+"smt_utils.ml" 10 96 123 "smt_utils.ml" 10 96 134
+type(
+  Num.num
+)
+"smt_utils.ml" 10 96 109 "smt_utils.ml" 10 96 134
+call(
+  tail
+)
+type(
+  Aez.Smt.Term.t
+)
+"smt_utils.ml" 11 135 139 "smt_utils.ml" 11 135 144
+type(
+  Aez.Smt.Term.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t
+)
+ident(
+  def tplus "smt_utils.ml" 12 181 181 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 11 135 145 "smt_utils.ml" 11 135 146
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def a "smt_utils.ml" 11 135 147 "smt_utils.ml" 11 135 180
+)
+"smt_utils.ml" 11 135 147 "smt_utils.ml" 11 135 148
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def b "smt_utils.ml" 11 135 151 "smt_utils.ml" 11 135 180
+)
+"smt_utils.ml" 11 135 151 "smt_utils.ml" 11 135 166
+type(
+  Aez.Smt.Term.operator -> Aez.Smt.Term.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_arith
+)
+"smt_utils.ml" 11 135 167 "smt_utils.ml" 11 135 176
+type(
+  Aez.Smt.Term.operator
+)
+"smt_utils.ml" 11 135 177 "smt_utils.ml" 11 135 178
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref a "smt_utils.ml" 11 135 145 "smt_utils.ml" 11 135 146
+)
+"smt_utils.ml" 11 135 179 "smt_utils.ml" 11 135 180
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref b "smt_utils.ml" 11 135 147 "smt_utils.ml" 11 135 148
+)
+"smt_utils.ml" 11 135 151 "smt_utils.ml" 11 135 180
+call(
+  tail
+)
+type(
+  Aez.Smt.Term.t
+)
+"smt_utils.ml" 12 181 185 "smt_utils.ml" 12 181 188
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def one "smt_utils.ml" 13 198 198 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 12 181 191 "smt_utils.ml" 12 181 195
+type(
+  int -> Aez.Smt.Term.t
+)
+ident(
+  int_ref tofi "smt_utils.ml" 10 96 100 "smt_utils.ml" 10 96 104
+)
+"smt_utils.ml" 12 181 196 "smt_utils.ml" 12 181 197
+type(
+  int
+)
+"smt_utils.ml" 12 181 191 "smt_utils.ml" 12 181 197
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"smt_utils.ml" 13 198 202 "smt_utils.ml" 13 198 206
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def zero "smt_utils.ml" 14 216 216 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 13 198 209 "smt_utils.ml" 13 198 213
+type(
+  int -> Aez.Smt.Term.t
+)
+ident(
+  int_ref tofi "smt_utils.ml" 10 96 100 "smt_utils.ml" 10 96 104
+)
+"smt_utils.ml" 13 198 214 "smt_utils.ml" 13 198 215
+type(
+  int
+)
+"smt_utils.ml" 13 198 209 "smt_utils.ml" 13 198 215
+call(
+  stack
+)
+type(
+  Aez.Smt.Term.t
+)
+"smt_utils.ml" 14 216 220 "smt_utils.ml" 14 216 227
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def empty_f "smt_utils.ml" 15 245 245 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 14 216 230 "smt_utils.ml" 14 216 244
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.f_true
+)
+"smt_utils.ml" 15 245 249 "smt_utils.ml" 15 245 261
+type(
+  bool ref
+)
+ident(
+  def fgen_verbose "smt_utils.ml" 17 275 275 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 15 245 264 "smt_utils.ml" 15 245 267
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"smt_utils.ml" 15 245 268 "smt_utils.ml" 15 245 273
+type(
+  bool
+)
+"smt_utils.ml" 15 245 264 "smt_utils.ml" 15 245 273
+type(
+  bool ref
+)
+"smt_utils.ml" 19 318 326 "smt_utils.ml" 19 318 336
+type(
+  Format.formatter -> Aez.Smt.Formula.t -> unit
+)
+ident(
+  def pp_formula "smt_utils.ml" 19 318 318 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 19 318 337 "smt_utils.ml" 19 318 340
+type(
+  Format.formatter
+)
+ident(
+  def fmt "smt_utils.ml" 19 318 341 "smt_utils.ml" 29 830 855
+)
+"smt_utils.ml" 19 318 341 "smt_utils.ml" 19 318 344
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def phi "smt_utils.ml" 20 348 352 "smt_utils.ml" 29 830 855
+)
+"smt_utils.ml" 20 348 358 "smt_utils.ml" 20 348 361
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref phi "smt_utils.ml" 19 318 341 "smt_utils.ml" 19 318 344
+)
+"smt_utils.ml" 21 367 387 "smt_utils.ml" 21 367 388
+type(
+  Aez.Literal.LT.t
+)
+ident(
+  def a "smt_utils.ml" 21 367 392 "smt_utils.ml" 21 367 414
+)
+"smt_utils.ml" 21 367 375 "smt_utils.ml" 21 367 388
+type(
+  Aez.Smt.Formula.t
+)
+"smt_utils.ml" 21 367 392 "smt_utils.ml" 21 367 408
+type(
+  Format.formatter -> Aez.Literal.LT.t -> unit
+)
+ident(
+  ext_ref Aez.Literal.LT.print
+)
+"smt_utils.ml" 21 367 409 "smt_utils.ml" 21 367 412
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 19 318 337 "smt_utils.ml" 19 318 340
+)
+"smt_utils.ml" 21 367 413 "smt_utils.ml" 21 367 414
+type(
+  Aez.Literal.LT.t
+)
+ident(
+  int_ref a "smt_utils.ml" 21 367 387 "smt_utils.ml" 21 367 388
+)
+"smt_utils.ml" 21 367 392 "smt_utils.ml" 21 367 414
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 22 415 437 "smt_utils.ml" 22 415 448
+type(
+  Aez.Smt.Formula.combinator
+)
+"smt_utils.ml" 22 415 451 "smt_utils.ml" 22 415 452
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f "smt_utils.ml" 23 459 462 "smt_utils.ml" 23 459 523
+)
+"smt_utils.ml" 22 415 450 "smt_utils.ml" 22 415 453
+type(
+  Aez.Smt.Formula.t list
+)
+"smt_utils.ml" 22 415 423 "smt_utils.ml" 22 415 454
+type(
+  Aez.Smt.Formula.t
+)
+"smt_utils.ml" 23 459 462 "smt_utils.ml" 23 459 469
+type(
+  Format.formatter ->
+  (string ->
+   string ->
+   string ->
+   (Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t -> unit, Format.formatter, unit)
+  format ->
+  string ->
+  string ->
+  string ->
+  (Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+  Aez.Smt.Formula.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 23 459 470 "smt_utils.ml" 23 459 473
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 19 318 337 "smt_utils.ml" 19 318 340
+)
+"smt_utils.ml" 23 459 474 "smt_utils.ml" 23 459 489
+type(
+  (string ->
+   string ->
+   string ->
+   (Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t -> unit, Format.formatter, unit)
+  format
+)
+"smt_utils.ml" 23 459 490 "smt_utils.ml" 23 459 495
+type(
+  string
+)
+ident(
+  ext_ref Config.cbold
+)
+"smt_utils.ml" 23 459 496 "smt_utils.ml" 23 459 505
+type(
+  string
+)
+ident(
+  ext_ref Config.cdarkgray
+)
+"smt_utils.ml" 23 459 506 "smt_utils.ml" 23 459 510
+type(
+  string
+)
+ident(
+  ext_ref Config.cdef
+)
+"smt_utils.ml" 23 459 511 "smt_utils.ml" 23 459 521
+type(
+  Format.formatter -> Aez.Smt.Formula.t -> unit
+)
+ident(
+  int_ref pp_formula "smt_utils.ml" 19 318 326 "smt_utils.ml" 19 318 336
+)
+"smt_utils.ml" 23 459 522 "smt_utils.ml" 23 459 523
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f "smt_utils.ml" 22 415 451 "smt_utils.ml" 22 415 452
+)
+"smt_utils.ml" 23 459 462 "smt_utils.ml" 23 459 523
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 24 524 546 "smt_utils.ml" 24 524 557
+type(
+  Aez.Smt.Formula.combinator
+)
+"smt_utils.ml" 24 524 559 "smt_utils.ml" 24 524 560
+type(
+  Aez.Smt.Formula.t list
+)
+ident(
+  def l "smt_utils.ml" 24 524 565 "smt_utils.ml" 24 524 608
+)
+"smt_utils.ml" 24 524 532 "smt_utils.ml" 24 524 561
+type(
+  Aez.Smt.Formula.t
+)
+"smt_utils.ml" 24 524 565 "smt_utils.ml" 24 524 572
+type(
+  Format.formatter ->
+  ((Format.formatter -> Aez.Smt.Formula.t list -> unit) ->
+   Aez.Smt.Formula.t list -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Aez.Smt.Formula.t list -> unit) ->
+  Aez.Smt.Formula.t list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 24 524 573 "smt_utils.ml" 24 524 576
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 19 318 337 "smt_utils.ml" 19 318 340
+)
+"smt_utils.ml" 24 524 577 "smt_utils.ml" 24 524 587
+type(
+  ((Format.formatter -> Aez.Smt.Formula.t list -> unit) ->
+   Aez.Smt.Formula.t list -> unit, Format.formatter, unit)
+  format
+)
+"smt_utils.ml" 24 524 589 "smt_utils.ml" 24 524 599
+type(
+  string -> Format.formatter -> Aez.Smt.Formula.t list -> unit
+)
+ident(
+  int_ref print_list "smt_utils.ml" 30 856 862 "smt_utils.ml" 30 856 872
+)
+"smt_utils.ml" 24 524 600 "smt_utils.ml" 24 524 605
+type(
+  string
+)
+"smt_utils.ml" 24 524 588 "smt_utils.ml" 24 524 606
+call(
+  stack
+)
+type(
+  Format.formatter -> Aez.Smt.Formula.t list -> unit
+)
+"smt_utils.ml" 24 524 607 "smt_utils.ml" 24 524 608
+type(
+  Aez.Smt.Formula.t list
+)
+ident(
+  int_ref l "smt_utils.ml" 24 524 559 "smt_utils.ml" 24 524 560
+)
+"smt_utils.ml" 24 524 565 "smt_utils.ml" 24 524 608
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 25 609 631 "smt_utils.ml" 25 609 641
+type(
+  Aez.Smt.Formula.combinator
+)
+"smt_utils.ml" 25 609 643 "smt_utils.ml" 25 609 644
+type(
+  Aez.Smt.Formula.t list
+)
+ident(
+  def l "smt_utils.ml" 25 609 650 "smt_utils.ml" 25 609 692
+)
+"smt_utils.ml" 25 609 617 "smt_utils.ml" 25 609 645
+type(
+  Aez.Smt.Formula.t
+)
+"smt_utils.ml" 25 609 650 "smt_utils.ml" 25 609 657
+type(
+  Format.formatter ->
+  ((Format.formatter -> Aez.Smt.Formula.t list -> unit) ->
+   Aez.Smt.Formula.t list -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Aez.Smt.Formula.t list -> unit) ->
+  Aez.Smt.Formula.t list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 25 609 658 "smt_utils.ml" 25 609 661
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 19 318 337 "smt_utils.ml" 19 318 340
+)
+"smt_utils.ml" 25 609 662 "smt_utils.ml" 25 609 672
+type(
+  ((Format.formatter -> Aez.Smt.Formula.t list -> unit) ->
+   Aez.Smt.Formula.t list -> unit, Format.formatter, unit)
+  format
+)
+"smt_utils.ml" 25 609 674 "smt_utils.ml" 25 609 684
+type(
+  string -> Format.formatter -> Aez.Smt.Formula.t list -> unit
+)
+ident(
+  int_ref print_list "smt_utils.ml" 30 856 862 "smt_utils.ml" 30 856 872
+)
+"smt_utils.ml" 25 609 685 "smt_utils.ml" 25 609 689
+type(
+  string
+)
+"smt_utils.ml" 25 609 673 "smt_utils.ml" 25 609 690
+call(
+  stack
+)
+type(
+  Format.formatter -> Aez.Smt.Formula.t list -> unit
+)
+"smt_utils.ml" 25 609 691 "smt_utils.ml" 25 609 692
+type(
+  Aez.Smt.Formula.t list
+)
+ident(
+  int_ref l "smt_utils.ml" 25 609 643 "smt_utils.ml" 25 609 644
+)
+"smt_utils.ml" 25 609 650 "smt_utils.ml" 25 609 692
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 26 693 715 "smt_utils.ml" 26 693 726
+type(
+  Aez.Smt.Formula.combinator
+)
+"smt_utils.ml" 26 693 729 "smt_utils.ml" 26 693 731
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f1 "smt_utils.ml" 27 742 745 "smt_utils.ml" 28 783 829
+)
+"smt_utils.ml" 26 693 733 "smt_utils.ml" 26 693 735
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f2 "smt_utils.ml" 27 742 745 "smt_utils.ml" 28 783 829
+)
+"smt_utils.ml" 26 693 728 "smt_utils.ml" 26 693 736
+type(
+  Aez.Smt.Formula.t list
+)
+"smt_utils.ml" 26 693 701 "smt_utils.ml" 26 693 737
+type(
+  Aez.Smt.Formula.t
+)
+"smt_utils.ml" 27 742 745 "smt_utils.ml" 27 742 752
+type(
+  Format.formatter ->
+  ((Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t ->
+   string ->
+   string ->
+   string ->
+   (Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+  Aez.Smt.Formula.t ->
+  string ->
+  string ->
+  string ->
+  (Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+  Aez.Smt.Formula.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 27 742 753 "smt_utils.ml" 27 742 756
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 19 318 337 "smt_utils.ml" 19 318 340
+)
+"smt_utils.ml" 27 742 757 "smt_utils.ml" 27 742 782
+type(
+  ((Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t ->
+   string ->
+   string ->
+   string ->
+   (Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t -> unit, Format.formatter, unit)
+  format
+)
+"smt_utils.ml" 28 783 785 "smt_utils.ml" 28 783 795
+type(
+  Format.formatter -> Aez.Smt.Formula.t -> unit
+)
+ident(
+  int_ref pp_formula "smt_utils.ml" 19 318 326 "smt_utils.ml" 19 318 336
+)
+"smt_utils.ml" 28 783 796 "smt_utils.ml" 28 783 798
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f1 "smt_utils.ml" 26 693 729 "smt_utils.ml" 26 693 731
+)
+"smt_utils.ml" 28 783 799 "smt_utils.ml" 28 783 804
+type(
+  string
+)
+ident(
+  ext_ref Config.cbold
+)
+"smt_utils.ml" 28 783 805 "smt_utils.ml" 28 783 810
+type(
+  string
+)
+ident(
+  ext_ref Config.cblue
+)
+"smt_utils.ml" 28 783 811 "smt_utils.ml" 28 783 815
+type(
+  string
+)
+ident(
+  ext_ref Config.cdef
+)
+"smt_utils.ml" 28 783 816 "smt_utils.ml" 28 783 826
+type(
+  Format.formatter -> Aez.Smt.Formula.t -> unit
+)
+ident(
+  int_ref pp_formula "smt_utils.ml" 19 318 326 "smt_utils.ml" 19 318 336
+)
+"smt_utils.ml" 28 783 827 "smt_utils.ml" 28 783 829
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f2 "smt_utils.ml" 26 693 733 "smt_utils.ml" 26 693 735
+)
+"smt_utils.ml" 27 742 745 "smt_utils.ml" 28 783 829
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 29 830 838 "smt_utils.ml" 29 830 839
+type(
+  Aez.Smt.Formula.t
+)
+"smt_utils.ml" 29 830 850 "smt_utils.ml" 29 830 855
+type(
+  bool
+)
+"smt_utils.ml" 29 830 843 "smt_utils.ml" 29 830 855
+type(
+  unit
+)
+"smt_utils.ml" 20 348 352 "smt_utils.ml" 29 830 855
+type(
+  unit
+)
+"smt_utils.ml" 30 856 862 "smt_utils.ml" 30 856 872
+type(
+  string -> Format.formatter -> Aez.Smt.Formula.t list -> unit
+)
+ident(
+  def print_list "smt_utils.ml" 19 318 318 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 30 856 873 "smt_utils.ml" 30 856 876
+type(
+  string
+)
+ident(
+  def sep "smt_utils.ml" 30 856 877 "smt_utils.ml" 35 986 1040
+)
+"smt_utils.ml" 30 856 877 "smt_utils.ml" 30 856 880
+type(
+  Format.formatter
+)
+ident(
+  def fmt "smt_utils.ml" 30 856 883 "smt_utils.ml" 35 986 1040
+)
+"smt_utils.ml" 31 892 898 "smt_utils.ml" 31 892 900
+type(
+  Aez.Smt.Formula.t list
+)
+"smt_utils.ml" 31 892 904 "smt_utils.ml" 31 892 906
+type(
+  unit
+)
+"smt_utils.ml" 32 907 914 "smt_utils.ml" 32 907 915
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f "smt_utils.ml" 32 907 920 "smt_utils.ml" 32 907 936
+)
+"smt_utils.ml" 32 907 913 "smt_utils.ml" 32 907 916
+type(
+  Aez.Smt.Formula.t list
+)
+"smt_utils.ml" 32 907 920 "smt_utils.ml" 32 907 930
+type(
+  Format.formatter -> Aez.Smt.Formula.t -> unit
+)
+ident(
+  int_ref pp_formula "smt_utils.ml" 19 318 326 "smt_utils.ml" 19 318 336
+)
+"smt_utils.ml" 32 907 931 "smt_utils.ml" 32 907 934
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 30 856 877 "smt_utils.ml" 30 856 880
+)
+"smt_utils.ml" 32 907 935 "smt_utils.ml" 32 907 936
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f "smt_utils.ml" 32 907 914 "smt_utils.ml" 32 907 915
+)
+"smt_utils.ml" 32 907 920 "smt_utils.ml" 32 907 936
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 33 937 943 "smt_utils.ml" 33 937 944
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f "smt_utils.ml" 34 952 955 "smt_utils.ml" 35 986 1040
+)
+"smt_utils.ml" 33 937 946 "smt_utils.ml" 33 937 947
+type(
+  Aez.Smt.Formula.t list
+)
+ident(
+  def l "smt_utils.ml" 34 952 955 "smt_utils.ml" 35 986 1040
+)
+"smt_utils.ml" 33 937 943 "smt_utils.ml" 33 937 947
+type(
+  Aez.Smt.Formula.t list
+)
+"smt_utils.ml" 34 952 955 "smt_utils.ml" 34 952 962
+type(
+  Format.formatter ->
+  ((Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t ->
+   string ->
+   string ->
+   string ->
+   string ->
+   (Format.formatter -> Aez.Smt.Formula.t list -> unit) ->
+   Aez.Smt.Formula.t list -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+  Aez.Smt.Formula.t ->
+  string ->
+  string ->
+  string ->
+  string ->
+  (Format.formatter -> Aez.Smt.Formula.t list -> unit) ->
+  Aez.Smt.Formula.t list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 34 952 963 "smt_utils.ml" 34 952 966
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 30 856 877 "smt_utils.ml" 30 856 880
+)
+"smt_utils.ml" 34 952 967 "smt_utils.ml" 34 952 985
+type(
+  ((Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t ->
+   string ->
+   string ->
+   string ->
+   string ->
+   (Format.formatter -> Aez.Smt.Formula.t list -> unit) ->
+   Aez.Smt.Formula.t list -> unit, Format.formatter, unit)
+  format
+)
+"smt_utils.ml" 35 986 988 "smt_utils.ml" 35 986 998
+type(
+  Format.formatter -> Aez.Smt.Formula.t -> unit
+)
+ident(
+  int_ref pp_formula "smt_utils.ml" 19 318 326 "smt_utils.ml" 19 318 336
+)
+"smt_utils.ml" 35 986 999 "smt_utils.ml" 35 986 1000
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f "smt_utils.ml" 33 937 943 "smt_utils.ml" 33 937 944
+)
+"smt_utils.ml" 35 986 1001 "smt_utils.ml" 35 986 1006
+type(
+  string
+)
+ident(
+  ext_ref Config.cbold
+)
+"smt_utils.ml" 35 986 1007 "smt_utils.ml" 35 986 1012
+type(
+  string
+)
+ident(
+  ext_ref Config.cblue
+)
+"smt_utils.ml" 35 986 1013 "smt_utils.ml" 35 986 1016
+type(
+  string
+)
+ident(
+  int_ref sep "smt_utils.ml" 30 856 873 "smt_utils.ml" 30 856 876
+)
+"smt_utils.ml" 35 986 1017 "smt_utils.ml" 35 986 1021
+type(
+  string
+)
+ident(
+  ext_ref Config.cdef
+)
+"smt_utils.ml" 35 986 1023 "smt_utils.ml" 35 986 1033
+type(
+  string -> Format.formatter -> Aez.Smt.Formula.t list -> unit
+)
+ident(
+  int_ref print_list "smt_utils.ml" 30 856 862 "smt_utils.ml" 30 856 872
+)
+"smt_utils.ml" 35 986 1034 "smt_utils.ml" 35 986 1037
+type(
+  string
+)
+ident(
+  int_ref sep "smt_utils.ml" 30 856 873 "smt_utils.ml" 30 856 876
+)
+"smt_utils.ml" 35 986 1022 "smt_utils.ml" 35 986 1038
+call(
+  stack
+)
+type(
+  Format.formatter -> Aez.Smt.Formula.t list -> unit
+)
+"smt_utils.ml" 35 986 1039 "smt_utils.ml" 35 986 1040
+type(
+  Aez.Smt.Formula.t list
+)
+ident(
+  int_ref l "smt_utils.ml" 33 937 946 "smt_utils.ml" 33 937 947
+)
+"smt_utils.ml" 34 952 955 "smt_utils.ml" 35 986 1040
+call(
+  stack
+)
+type(
+  unit
+)
+"smt_utils.ml" 30 856 883 "smt_utils.ml" 35 986 1040
+type(
+  Aez.Smt.Formula.t list -> unit
+)
+"smt_utils.ml" 37 1042 1050 "smt_utils.ml" 37 1042 1054
+type(
+  'a -> int list -> unit
+)
+ident(
+  def p_il "smt_utils.ml" 37 1042 1042 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 37 1042 1055 "smt_utils.ml" 37 1042 1058
+type(
+  'a
+)
+ident(
+  def fmt "smt_utils.ml" 37 1042 1061 "smt_utils.ml" 40 1104 1143
+)
+"smt_utils.ml" 38 1070 1073 "smt_utils.ml" 38 1070 1075
+type(
+  int list
+)
+"smt_utils.ml" 38 1070 1079 "smt_utils.ml" 38 1070 1081
+type(
+  unit
+)
+"smt_utils.ml" 39 1082 1086 "smt_utils.ml" 39 1082 1087
+type(
+  int
+)
+ident(
+  def i "smt_utils.ml" 39 1082 1092 "smt_utils.ml" 39 1082 1103
+)
+"smt_utils.ml" 39 1082 1085 "smt_utils.ml" 39 1082 1088
+type(
+  int list
+)
+"smt_utils.ml" 39 1082 1092 "smt_utils.ml" 39 1082 1101
+type(
+  int -> unit
+)
+ident(
+  ext_ref Format.print_int
+)
+"smt_utils.ml" 39 1082 1102 "smt_utils.ml" 39 1082 1103
+type(
+  int
+)
+ident(
+  int_ref i "smt_utils.ml" 39 1082 1086 "smt_utils.ml" 39 1082 1087
+)
+"smt_utils.ml" 39 1082 1092 "smt_utils.ml" 39 1082 1103
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 40 1104 1107 "smt_utils.ml" 40 1104 1108
+type(
+  int
+)
+ident(
+  def i "smt_utils.ml" 40 1104 1116 "smt_utils.ml" 40 1104 1143
+)
+"smt_utils.ml" 40 1104 1110 "smt_utils.ml" 40 1104 1112
+type(
+  int list
+)
+ident(
+  def tl "smt_utils.ml" 40 1104 1116 "smt_utils.ml" 40 1104 1143
+)
+"smt_utils.ml" 40 1104 1107 "smt_utils.ml" 40 1104 1112
+type(
+  int list
+)
+"smt_utils.ml" 40 1104 1117 "smt_utils.ml" 40 1104 1126
+type(
+  int -> unit
+)
+ident(
+  ext_ref Format.print_int
+)
+"smt_utils.ml" 40 1104 1127 "smt_utils.ml" 40 1104 1128
+type(
+  int
+)
+ident(
+  int_ref i "smt_utils.ml" 40 1104 1107 "smt_utils.ml" 40 1104 1108
+)
+"smt_utils.ml" 40 1104 1116 "smt_utils.ml" 40 1104 1129
+call(
+  stack
+)
+type(
+  unit
+)
+"smt_utils.ml" 40 1104 1131 "smt_utils.ml" 40 1104 1135
+type(
+  'a -> int list -> unit
+)
+ident(
+  int_ref p_il "smt_utils.ml" 37 1042 1050 "smt_utils.ml" 37 1042 1054
+)
+"smt_utils.ml" 40 1104 1136 "smt_utils.ml" 40 1104 1139
+type(
+  'a
+)
+ident(
+  int_ref fmt "smt_utils.ml" 37 1042 1055 "smt_utils.ml" 37 1042 1058
+)
+"smt_utils.ml" 40 1104 1140 "smt_utils.ml" 40 1104 1142
+type(
+  int list
+)
+ident(
+  int_ref tl "smt_utils.ml" 40 1104 1110 "smt_utils.ml" 40 1104 1112
+)
+"smt_utils.ml" 40 1104 1130 "smt_utils.ml" 40 1104 1143
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 40 1104 1116 "smt_utils.ml" 40 1104 1143
+type(
+  unit
+)
+"smt_utils.ml" 37 1042 1061 "smt_utils.ml" 40 1104 1143
+type(
+  int list -> unit
+)
+"smt_utils.ml" 52 1383 1387 "smt_utils.ml" 52 1383 1398
+type(
+  Format.formatter -> fgen_error -> unit
+)
+ident(
+  def fgen_report "smt_utils.ml" 73 2064 2064 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 52 1383 1399 "smt_utils.ml" 52 1383 1402
+type(
+  Format.formatter
+)
+ident(
+  def fmt "smt_utils.ml" 52 1383 1405 "smt_utils.ml" 71 2007 2062
+)
+"smt_utils.ml" 53 1414 1436 "smt_utils.ml" 53 1414 1437
+type(
+  Typed_ast.t_expr
+)
+ident(
+  def e "smt_utils.ml" 54 1442 1443 "smt_utils.ml" 61 1703 1708
+)
+"smt_utils.ml" 53 1414 1418 "smt_utils.ml" 53 1414 1437
+type(
+  fgen_error
+)
+"smt_utils.ml" 54 1442 1443 "smt_utils.ml" 54 1442 1450
+type(
+  Format.formatter ->
+  ((Format.formatter -> Typed_ast.t_expr -> unit) -> Typed_ast.t_expr -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> Typed_ast.t_expr -> unit) -> Typed_ast.t_expr -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 54 1442 1451 "smt_utils.ml" 54 1442 1454
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 52 1383 1399 "smt_utils.ml" 52 1383 1402
+)
+"smt_utils.ml" 54 1442 1455 "smt_utils.ml" 54 1442 1497
+type(
+  ((Format.formatter -> Typed_ast.t_expr -> unit) -> Typed_ast.t_expr -> unit,
+   Format.formatter, unit)
+  format
+)
+"smt_utils.ml" 55 1498 1501 "smt_utils.ml" 55 1498 1510
+type(
+  Format.formatter -> Typed_ast.t_expr -> unit
+)
+ident(
+  ext_ref Typed_ast_printer.print_exp
+)
+"smt_utils.ml" 55 1498 1511 "smt_utils.ml" 55 1498 1512
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref e "smt_utils.ml" 53 1414 1436 "smt_utils.ml" 53 1414 1437
+)
+"smt_utils.ml" 54 1442 1443 "smt_utils.ml" 55 1498 1512
+call(
+  stack
+)
+type(
+  unit
+)
+"smt_utils.ml" 57 1521 1528 "smt_utils.ml" 57 1521 1529
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref e "smt_utils.ml" 53 1414 1436 "smt_utils.ml" 53 1414 1437
+)
+"smt_utils.ml" 57 1521 1528 "smt_utils.ml" 57 1521 1540
+type(
+  Typed_ast.t_expr_desc
+)
+"smt_utils.ml" 58 1546 1557 "smt_utils.ml" 58 1546 1558
+type(
+  Ident.t
+)
+"smt_utils.ml" 58 1546 1559 "smt_utils.ml" 58 1546 1560
+type(
+  Typed_ast.t_expr list
+)
+"smt_utils.ml" 58 1546 1549 "smt_utils.ml" 58 1546 1561
+type(
+  Typed_ast.t_expr_desc
+)
+"smt_utils.ml" 58 1546 1565 "smt_utils.ml" 58 1546 1572
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 58 1546 1573 "smt_utils.ml" 58 1546 1576
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 52 1383 1399 "smt_utils.ml" 52 1383 1402
+)
+"smt_utils.ml" 58 1546 1577 "smt_utils.ml" 58 1546 1602
+type(
+  (unit, Format.formatter, unit) format
+)
+"smt_utils.ml" 58 1546 1565 "smt_utils.ml" 58 1546 1602
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 59 1603 1615 "smt_utils.ml" 59 1603 1616
+type(
+  Typed_ast.t_expr list
+)
+"smt_utils.ml" 59 1603 1606 "smt_utils.ml" 59 1603 1616
+type(
+  Typed_ast.t_expr_desc
+)
+"smt_utils.ml" 59 1603 1620 "smt_utils.ml" 59 1603 1627
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 59 1603 1628 "smt_utils.ml" 59 1603 1631
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 52 1383 1399 "smt_utils.ml" 52 1383 1402
+)
+"smt_utils.ml" 59 1603 1632 "smt_utils.ml" 59 1603 1650
+type(
+  (unit, Format.formatter, unit) format
+)
+"smt_utils.ml" 59 1603 1620 "smt_utils.ml" 59 1603 1650
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 60 1651 1654 "smt_utils.ml" 60 1651 1655
+type(
+  Typed_ast.t_expr_desc
+)
+"smt_utils.ml" 60 1651 1659 "smt_utils.ml" 60 1651 1666
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 60 1651 1667 "smt_utils.ml" 60 1651 1670
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 52 1383 1399 "smt_utils.ml" 52 1383 1402
+)
+"smt_utils.ml" 60 1651 1671 "smt_utils.ml" 60 1651 1702
+type(
+  (unit, Format.formatter, unit) format
+)
+"smt_utils.ml" 60 1651 1659 "smt_utils.ml" 60 1651 1702
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 56 1514 1515 "smt_utils.ml" 61 1703 1708
+type(
+  unit
+)
+"smt_utils.ml" 54 1442 1443 "smt_utils.ml" 61 1703 1708
+type(
+  unit
+)
+"smt_utils.ml" 62 1709 1734 "smt_utils.ml" 62 1709 1736
+type(
+  Asttypes.op
+)
+ident(
+  def op "smt_utils.ml" 63 1741 1742 "smt_utils.ml" 64 1793 1805
+)
+"smt_utils.ml" 62 1709 1713 "smt_utils.ml" 62 1709 1736
+type(
+  fgen_error
+)
+"smt_utils.ml" 63 1741 1742 "smt_utils.ml" 63 1741 1749
+type(
+  Format.formatter ->
+  ((Format.formatter -> Asttypes.op -> unit) -> Asttypes.op -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Asttypes.op -> unit) -> Asttypes.op -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 63 1741 1750 "smt_utils.ml" 63 1741 1753
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 52 1383 1399 "smt_utils.ml" 52 1383 1402
+)
+"smt_utils.ml" 63 1741 1754 "smt_utils.ml" 63 1741 1792
+type(
+  ((Format.formatter -> Asttypes.op -> unit) -> Asttypes.op -> unit,
+   Format.formatter, unit)
+  format
+)
+"smt_utils.ml" 64 1793 1794 "smt_utils.ml" 64 1793 1802
+type(
+  Format.formatter -> Asttypes.op -> unit
+)
+ident(
+  ext_ref Typed_ast_printer.print_op
+)
+"smt_utils.ml" 64 1793 1803 "smt_utils.ml" 64 1793 1805
+type(
+  Asttypes.op
+)
+ident(
+  int_ref op "smt_utils.ml" 62 1709 1734 "smt_utils.ml" 62 1709 1736
+)
+"smt_utils.ml" 63 1741 1742 "smt_utils.ml" 64 1793 1805
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 65 1806 1810 "smt_utils.ml" 65 1806 1830
+type(
+  fgen_error
+)
+"smt_utils.ml" 66 1834 1835 "smt_utils.ml" 66 1834 1842
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 66 1834 1843 "smt_utils.ml" 66 1834 1846
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 52 1383 1399 "smt_utils.ml" 52 1383 1402
+)
+"smt_utils.ml" 66 1834 1847 "smt_utils.ml" 66 1834 1872
+type(
+  (unit, Format.formatter, unit) format
+)
+"smt_utils.ml" 66 1834 1835 "smt_utils.ml" 66 1834 1872
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 67 1873 1895 "smt_utils.ml" 67 1873 1896
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f "smt_utils.ml" 68 1901 1902 "smt_utils.ml" 69 1959 1977
+)
+"smt_utils.ml" 67 1873 1877 "smt_utils.ml" 67 1873 1896
+type(
+  fgen_error
+)
+"smt_utils.ml" 68 1901 1902 "smt_utils.ml" 68 1901 1909
+type(
+  Format.formatter ->
+  ((Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+  Aez.Smt.Formula.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 68 1901 1910 "smt_utils.ml" 68 1901 1913
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 52 1383 1399 "smt_utils.ml" 52 1383 1402
+)
+"smt_utils.ml" 68 1901 1914 "smt_utils.ml" 68 1901 1958
+type(
+  ((Format.formatter -> Aez.Smt.Formula.t -> unit) ->
+   Aez.Smt.Formula.t -> unit, Format.formatter, unit)
+  format
+)
+"smt_utils.ml" 69 1959 1962 "smt_utils.ml" 69 1959 1975
+type(
+  Format.formatter -> Aez.Smt.Formula.t -> unit
+)
+ident(
+  ext_ref Aez.Smt.Formula.print
+)
+"smt_utils.ml" 69 1959 1976 "smt_utils.ml" 69 1959 1977
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f "smt_utils.ml" 67 1873 1895 "smt_utils.ml" 67 1873 1896
+)
+"smt_utils.ml" 68 1901 1902 "smt_utils.ml" 69 1959 1977
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 70 1978 1998 "smt_utils.ml" 70 1978 1999
+type(
+  string
+)
+ident(
+  def s "smt_utils.ml" 71 2007 2008 "smt_utils.ml" 71 2007 2062
+)
+"smt_utils.ml" 70 1978 2001 "smt_utils.ml" 70 1978 2002
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def t "smt_utils.ml" 71 2007 2008 "smt_utils.ml" 71 2007 2062
+)
+"smt_utils.ml" 70 1978 1982 "smt_utils.ml" 70 1978 2003
+type(
+  fgen_error
+)
+"smt_utils.ml" 71 2007 2008 "smt_utils.ml" 71 2007 2015
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"smt_utils.ml" 71 2007 2016 "smt_utils.ml" 71 2007 2019
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "smt_utils.ml" 52 1383 1399 "smt_utils.ml" 52 1383 1402
+)
+"smt_utils.ml" 71 2007 2020 "smt_utils.ml" 71 2007 2060
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"smt_utils.ml" 71 2007 2061 "smt_utils.ml" 71 2007 2062
+type(
+  string
+)
+ident(
+  int_ref s "smt_utils.ml" 70 1978 1998 "smt_utils.ml" 70 1978 1999
+)
+"smt_utils.ml" 71 2007 2008 "smt_utils.ml" 71 2007 2062
+call(
+  tail
+)
+type(
+  unit
+)
+"smt_utils.ml" 52 1383 1405 "smt_utils.ml" 71 2007 2062
+type(
+  fgen_error -> unit
+)
+"smt_utils.ml" 73 2064 2068 "smt_utils.ml" 73 2064 2078
+type(
+  fgen_error -> 'a
+)
+ident(
+  def fgen_error "smt_utils.ml" 76 2141 2141 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 73 2064 2079 "smt_utils.ml" 73 2064 2080
+type(
+  fgen_error
+)
+ident(
+  def e "smt_utils.ml" 73 2064 2083 "smt_utils.ml" 73 2064 2103
+)
+"smt_utils.ml" 73 2064 2083 "smt_utils.ml" 73 2064 2088
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"smt_utils.ml" 73 2064 2099 "smt_utils.ml" 73 2064 2102
+type(
+  fgen_error
+)
+ident(
+  int_ref e "smt_utils.ml" 73 2064 2079 "smt_utils.ml" 73 2064 2080
+)
+"smt_utils.ml" 73 2064 2089 "smt_utils.ml" 73 2064 2103
+type(
+  exn
+)
+"smt_utils.ml" 73 2064 2083 "smt_utils.ml" 73 2064 2103
+type(
+  'a
+)
+"smt_utils.ml" 87 2445 2449 "smt_utils.ml" 87 2445 2460
+type(
+  Typed_ast.t_expr -> Typed_ast.t_expr
+)
+ident(
+  def revert_comp "smt_utils.ml" 102 2809 2809 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 87 2445 2461 "smt_utils.ml" 87 2445 2462
+type(
+  Typed_ast.t_expr
+)
+ident(
+  def e "smt_utils.ml" 88 2465 2467 "smt_utils.ml" 99 2749 2759
+)
+"smt_utils.ml" 88 2465 2473 "smt_utils.ml" 88 2465 2474
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref e "smt_utils.ml" 87 2445 2461 "smt_utils.ml" 87 2445 2462
+)
+"smt_utils.ml" 88 2465 2473 "smt_utils.ml" 88 2465 2485
+type(
+  Typed_ast.t_expr_desc
+)
+"smt_utils.ml" 89 2491 2502 "smt_utils.ml" 89 2491 2504
+type(
+  Asttypes.op
+)
+ident(
+  def op "smt_utils.ml" 90 2513 2514 "smt_utils.ml" 98 2720 2748
+)
+"smt_utils.ml" 89 2491 2506 "smt_utils.ml" 89 2491 2508
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  def el "smt_utils.ml" 90 2513 2514 "smt_utils.ml" 98 2720 2748
+)
+"smt_utils.ml" 89 2491 2495 "smt_utils.ml" 89 2491 2509
+type(
+  Typed_ast.t_expr_desc
+)
+"smt_utils.ml" 90 2513 2518 "smt_utils.ml" 90 2513 2524
+type(
+  Asttypes.op
+)
+ident(
+  def rev_op "smt_utils.ml" 96 2631 2632 "smt_utils.ml" 98 2720 2748
+)
+"smt_utils.ml" 90 2513 2526 "smt_utils.ml" 90 2513 2532
+type(
+  bool
+)
+ident(
+  def revert "smt_utils.ml" 96 2631 2632 "smt_utils.ml" 98 2720 2748
+)
+"smt_utils.ml" 90 2513 2518 "smt_utils.ml" 90 2513 2532
+type(
+  Asttypes.op * bool
+)
+"smt_utils.ml" 91 2535 2544 "smt_utils.ml" 91 2535 2546
+type(
+  Asttypes.op
+)
+ident(
+  int_ref op "smt_utils.ml" 89 2491 2502 "smt_utils.ml" 89 2491 2504
+)
+"smt_utils.ml" 92 2552 2557 "smt_utils.ml" 92 2552 2562
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 92 2552 2566 "smt_utils.ml" 92 2552 2571
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 92 2552 2574 "smt_utils.ml" 92 2552 2578
+type(
+  bool
+)
+"smt_utils.ml" 92 2552 2566 "smt_utils.ml" 92 2552 2578
+type(
+  Asttypes.op * bool
+)
+"smt_utils.ml" 93 2579 2584 "smt_utils.ml" 93 2579 2589
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 93 2579 2593 "smt_utils.ml" 93 2579 2598
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 93 2579 2601 "smt_utils.ml" 93 2579 2605
+type(
+  bool
+)
+"smt_utils.ml" 93 2579 2593 "smt_utils.ml" 93 2579 2605
+type(
+  Asttypes.op * bool
+)
+"smt_utils.ml" 94 2606 2611 "smt_utils.ml" 94 2606 2612
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 94 2606 2616 "smt_utils.ml" 94 2606 2618
+type(
+  Asttypes.op
+)
+ident(
+  int_ref op "smt_utils.ml" 89 2491 2502 "smt_utils.ml" 89 2491 2504
+)
+"smt_utils.ml" 94 2606 2621 "smt_utils.ml" 94 2606 2626
+type(
+  bool
+)
+"smt_utils.ml" 94 2606 2616 "smt_utils.ml" 94 2606 2626
+type(
+  Asttypes.op * bool
+)
+"smt_utils.ml" 91 2535 2538 "smt_utils.ml" 94 2606 2626
+type(
+  Asttypes.op * bool
+)
+"smt_utils.ml" 96 2631 2636 "smt_utils.ml" 96 2631 2641
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  def elist "smt_utils.ml" 97 2682 2683 "smt_utils.ml" 98 2720 2748
+)
+"smt_utils.ml" 96 2631 2647 "smt_utils.ml" 96 2631 2653
+type(
+  bool
+)
+ident(
+  int_ref revert "smt_utils.ml" 90 2513 2526 "smt_utils.ml" 90 2513 2532
+)
+"smt_utils.ml" 96 2631 2659 "smt_utils.ml" 96 2631 2667
+type(
+  Typed_ast.t_expr list -> Typed_ast.t_expr list
+)
+ident(
+  ext_ref List.rev
+)
+"smt_utils.ml" 96 2631 2668 "smt_utils.ml" 96 2631 2670
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  int_ref el "smt_utils.ml" 89 2491 2506 "smt_utils.ml" 89 2491 2508
+)
+"smt_utils.ml" 96 2631 2659 "smt_utils.ml" 96 2631 2670
+call(
+  stack
+)
+type(
+  Typed_ast.t_expr list
+)
+"smt_utils.ml" 96 2631 2676 "smt_utils.ml" 96 2631 2678
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  int_ref el "smt_utils.ml" 89 2491 2506 "smt_utils.ml" 89 2491 2508
+)
+"smt_utils.ml" 96 2631 2644 "smt_utils.ml" 96 2631 2678
+type(
+  Typed_ast.t_expr list
+)
+"smt_utils.ml" 97 2682 2687 "smt_utils.ml" 97 2682 2692
+type(
+  Typed_ast.t_expr_desc
+)
+ident(
+  def ndesc "smt_utils.ml" 98 2720 2721 "smt_utils.ml" 98 2720 2748
+)
+"smt_utils.ml" 97 2682 2702 "smt_utils.ml" 97 2682 2708
+type(
+  Asttypes.op
+)
+ident(
+  int_ref rev_op "smt_utils.ml" 90 2513 2518 "smt_utils.ml" 90 2513 2524
+)
+"smt_utils.ml" 97 2682 2710 "smt_utils.ml" 97 2682 2715
+type(
+  Typed_ast.t_expr list
+)
+ident(
+  int_ref elist "smt_utils.ml" 96 2631 2636 "smt_utils.ml" 96 2631 2641
+)
+"smt_utils.ml" 97 2682 2695 "smt_utils.ml" 97 2682 2716
+type(
+  Typed_ast.t_expr_desc
+)
+"smt_utils.ml" 98 2720 2722 "smt_utils.ml" 98 2720 2723
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref e "smt_utils.ml" 87 2445 2461 "smt_utils.ml" 87 2445 2462
+)
+"smt_utils.ml" 98 2720 2742 "smt_utils.ml" 98 2720 2747
+type(
+  Typed_ast.t_expr_desc
+)
+ident(
+  int_ref ndesc "smt_utils.ml" 97 2682 2687 "smt_utils.ml" 97 2682 2692
+)
+"smt_utils.ml" 98 2720 2721 "smt_utils.ml" 98 2720 2748
+type(
+  Typed_ast.t_expr
+)
+"smt_utils.ml" 97 2682 2683 "smt_utils.ml" 98 2720 2748
+type(
+  Typed_ast.t_expr
+)
+"smt_utils.ml" 96 2631 2632 "smt_utils.ml" 98 2720 2748
+type(
+  Typed_ast.t_expr
+)
+"smt_utils.ml" 90 2513 2514 "smt_utils.ml" 98 2720 2748
+type(
+  Typed_ast.t_expr
+)
+"smt_utils.ml" 99 2749 2753 "smt_utils.ml" 99 2749 2754
+type(
+  Typed_ast.t_expr_desc
+)
+"smt_utils.ml" 99 2749 2758 "smt_utils.ml" 99 2749 2759
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref e "smt_utils.ml" 87 2445 2461 "smt_utils.ml" 87 2445 2462
+)
+"smt_utils.ml" 88 2465 2467 "smt_utils.ml" 99 2749 2759
+type(
+  Typed_ast.t_expr
+)
+"smt_utils.ml" 102 2809 2813 "smt_utils.ml" 102 2809 2825
+type(
+  Typed_ast.t_expr -> Asttypes.base_ty
+)
+ident(
+  def type_of_expr "smt_utils.ml" 106 2915 2915 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 103 2829 2835 "smt_utils.ml" 103 2829 2836
+type(
+  Typed_ast.t_expr
+)
+ident(
+  def e "smt_utils.ml" 103 2829 2840 "smt_utils.ml" 103 2829 2912
+)
+"smt_utils.ml" 103 2829 2846 "smt_utils.ml" 103 2829 2847
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref e "smt_utils.ml" 103 2829 2835 "smt_utils.ml" 103 2829 2836
+)
+"smt_utils.ml" 103 2829 2846 "smt_utils.ml" 103 2829 2858
+type(
+  Asttypes.ty
+)
+"smt_utils.ml" 103 2829 2865 "smt_utils.ml" 103 2829 2866
+type(
+  Asttypes.base_ty
+)
+ident(
+  def t "smt_utils.ml" 103 2829 2871 "smt_utils.ml" 103 2829 2872
+)
+"smt_utils.ml" 103 2829 2864 "smt_utils.ml" 103 2829 2867
+type(
+  Asttypes.ty
+)
+"smt_utils.ml" 103 2829 2871 "smt_utils.ml" 103 2829 2872
+type(
+  Asttypes.base_ty
+)
+ident(
+  int_ref t "smt_utils.ml" 103 2829 2865 "smt_utils.ml" 103 2829 2866
+)
+"smt_utils.ml" 103 2829 2875 "smt_utils.ml" 103 2829 2876
+type(
+  Asttypes.ty
+)
+"smt_utils.ml" 103 2829 2880 "smt_utils.ml" 103 2829 2890
+type(
+  fgen_error -> Asttypes.base_ty
+)
+ident(
+  int_ref fgen_error "smt_utils.ml" 73 2064 2068 "smt_utils.ml" 73 2064 2078
+)
+"smt_utils.ml" 103 2829 2910 "smt_utils.ml" 103 2829 2911
+type(
+  Typed_ast.t_expr
+)
+ident(
+  int_ref e "smt_utils.ml" 103 2829 2835 "smt_utils.ml" 103 2829 2836
+)
+"smt_utils.ml" 103 2829 2891 "smt_utils.ml" 103 2829 2912
+type(
+  fgen_error
+)
+"smt_utils.ml" 103 2829 2880 "smt_utils.ml" 103 2829 2912
+call(
+  tail
+)
+type(
+  Asttypes.base_ty
+)
+"smt_utils.ml" 103 2829 2840 "smt_utils.ml" 103 2829 2912
+type(
+  Asttypes.base_ty
+)
+"smt_utils.ml" 103 2829 2831 "smt_utils.ml" 103 2829 2912
+type(
+  Typed_ast.t_expr -> Asttypes.base_ty
+)
+"smt_utils.ml" 106 2915 2919 "smt_utils.ml" 106 2915 2931
+type(
+  Asttypes.base_ty -> Aez.Smt.Type.t
+)
+ident(
+  def translate_ty "smt_utils.ml" 112 3048 3048 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 106 2915 2932 "smt_utils.ml" 106 2915 2940
+type(
+  Asttypes.base_ty
+)
+ident(
+  def ast_type "smt_utils.ml" 107 2943 2945 "smt_utils.ml" 110 3019 3046
+)
+"smt_utils.ml" 107 2943 2951 "smt_utils.ml" 107 2943 2959
+type(
+  Asttypes.base_ty
+)
+ident(
+  int_ref ast_type "smt_utils.ml" 106 2915 2932 "smt_utils.ml" 106 2915 2940
+)
+"smt_utils.ml" 108 2965 2969 "smt_utils.ml" 108 2965 2974
+type(
+  Asttypes.base_ty
+)
+"smt_utils.ml" 108 2965 2978 "smt_utils.ml" 108 2965 2992
+type(
+  Aez.Smt.Type.t
+)
+ident(
+  ext_ref Aez.Smt.Type.type_bool
+)
+"smt_utils.ml" 109 2993 2997 "smt_utils.ml" 109 2993 3001
+type(
+  Asttypes.base_ty
+)
+"smt_utils.ml" 109 2993 3005 "smt_utils.ml" 109 2993 3018
+type(
+  Aez.Smt.Type.t
+)
+ident(
+  ext_ref Aez.Smt.Type.type_int
+)
+"smt_utils.ml" 110 3019 3023 "smt_utils.ml" 110 3019 3028
+type(
+  Asttypes.base_ty
+)
+"smt_utils.ml" 110 3019 3032 "smt_utils.ml" 110 3019 3046
+type(
+  Aez.Smt.Type.t
+)
+ident(
+  ext_ref Aez.Smt.Type.type_real
+)
+"smt_utils.ml" 107 2943 2945 "smt_utils.ml" 110 3019 3046
+type(
+  Aez.Smt.Type.t
+)
+"smt_utils.ml" 112 3048 3052 "smt_utils.ml" 112 3048 3064
+type(
+  Asttypes.op -> formula_operator
+)
+ident(
+  def translate_op "smt_utils.ml" 131 3696 3696 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 112 3048 3065 "smt_utils.ml" 112 3048 3067
+type(
+  Asttypes.op
+)
+ident(
+  def op "smt_utils.ml" 113 3070 3072 "smt_utils.ml" 128 3659 3693
+)
+"smt_utils.ml" 113 3070 3078 "smt_utils.ml" 113 3070 3080
+type(
+  Asttypes.op
+)
+ident(
+  int_ref op "smt_utils.ml" 112 3048 3065 "smt_utils.ml" 112 3048 3067
+)
+"smt_utils.ml" 114 3086 3090 "smt_utils.ml" 114 3086 3095
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 114 3086 3110 "smt_utils.ml" 114 3086 3120
+type(
+  Aez.Smt.Formula.comparator
+)
+"smt_utils.ml" 114 3086 3099 "smt_utils.ml" 114 3086 3120
+type(
+  formula_operator
+)
+"smt_utils.ml" 115 3121 3125 "smt_utils.ml" 115 3121 3131
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 115 3121 3146 "smt_utils.ml" 115 3121 3157
+type(
+  Aez.Smt.Formula.comparator
+)
+"smt_utils.ml" 115 3121 3135 "smt_utils.ml" 115 3121 3157
+type(
+  formula_operator
+)
+"smt_utils.ml" 116 3158 3162 "smt_utils.ml" 116 3158 3167
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 116 3158 3182 "smt_utils.ml" 116 3158 3192
+type(
+  Aez.Smt.Formula.comparator
+)
+"smt_utils.ml" 116 3158 3171 "smt_utils.ml" 116 3158 3192
+type(
+  formula_operator
+)
+"smt_utils.ml" 117 3193 3197 "smt_utils.ml" 117 3193 3202
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 117 3193 3217 "smt_utils.ml" 117 3193 3227
+type(
+  Aez.Smt.Formula.comparator
+)
+"smt_utils.ml" 117 3193 3206 "smt_utils.ml" 117 3193 3227
+type(
+  formula_operator
+)
+"smt_utils.ml" 118 3228 3232 "smt_utils.ml" 118 3228 3237
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 118 3228 3240 "smt_utils.ml" 118 3228 3245
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 118 3228 3232 "smt_utils.ml" 118 3228 3245
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 118 3228 3249 "smt_utils.ml" 118 3228 3259
+type(
+  fgen_error -> formula_operator
+)
+ident(
+  int_ref fgen_error "smt_utils.ml" 73 2064 2068 "smt_utils.ml" 73 2064 2078
+)
+"smt_utils.ml" 118 3228 3282 "smt_utils.ml" 118 3228 3284
+type(
+  Asttypes.op
+)
+ident(
+  int_ref op "smt_utils.ml" 112 3048 3065 "smt_utils.ml" 112 3048 3067
+)
+"smt_utils.ml" 118 3228 3260 "smt_utils.ml" 118 3228 3285
+type(
+  fgen_error
+)
+"smt_utils.ml" 118 3228 3249 "smt_utils.ml" 118 3228 3285
+call(
+  tail
+)
+type(
+  formula_operator
+)
+"smt_utils.ml" 119 3286 3290 "smt_utils.ml" 119 3286 3296
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 119 3286 3311 "smt_utils.ml" 119 3286 3322
+type(
+  Aez.Smt.Formula.combinator
+)
+"smt_utils.ml" 119 3286 3300 "smt_utils.ml" 119 3286 3322
+type(
+  formula_operator
+)
+"smt_utils.ml" 120 3323 3327 "smt_utils.ml" 120 3323 3332
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 120 3323 3347 "smt_utils.ml" 120 3323 3357
+type(
+  Aez.Smt.Formula.combinator
+)
+"smt_utils.ml" 120 3323 3336 "smt_utils.ml" 120 3323 3357
+type(
+  formula_operator
+)
+"smt_utils.ml" 121 3358 3362 "smt_utils.ml" 121 3358 3368
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 121 3358 3383 "smt_utils.ml" 121 3358 3394
+type(
+  Aez.Smt.Formula.combinator
+)
+"smt_utils.ml" 121 3358 3372 "smt_utils.ml" 121 3358 3394
+type(
+  formula_operator
+)
+"smt_utils.ml" 122 3395 3399 "smt_utils.ml" 122 3395 3406
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 122 3395 3421 "smt_utils.ml" 122 3395 3432
+type(
+  Aez.Smt.Formula.combinator
+)
+"smt_utils.ml" 122 3395 3410 "smt_utils.ml" 122 3395 3432
+type(
+  formula_operator
+)
+"smt_utils.ml" 123 3433 3437 "smt_utils.ml" 123 3433 3443
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 123 3433 3446 "smt_utils.ml" 123 3433 3454
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 123 3433 3437 "smt_utils.ml" 123 3433 3454
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 123 3433 3470 "smt_utils.ml" 123 3433 3479
+type(
+  Aez.Smt.Term.operator
+)
+"smt_utils.ml" 123 3433 3458 "smt_utils.ml" 123 3433 3479
+type(
+  formula_operator
+)
+"smt_utils.ml" 124 3480 3484 "smt_utils.ml" 124 3480 3490
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 124 3480 3493 "smt_utils.ml" 124 3480 3501
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 124 3480 3484 "smt_utils.ml" 124 3480 3501
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 124 3480 3517 "smt_utils.ml" 124 3480 3527
+type(
+  Aez.Smt.Term.operator
+)
+"smt_utils.ml" 124 3480 3505 "smt_utils.ml" 124 3480 3527
+type(
+  formula_operator
+)
+"smt_utils.ml" 125 3528 3532 "smt_utils.ml" 125 3528 3538
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 125 3528 3541 "smt_utils.ml" 125 3528 3549
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 125 3528 3532 "smt_utils.ml" 125 3528 3549
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 125 3528 3565 "smt_utils.ml" 125 3528 3574
+type(
+  Aez.Smt.Term.operator
+)
+"smt_utils.ml" 125 3528 3553 "smt_utils.ml" 125 3528 3574
+type(
+  formula_operator
+)
+"smt_utils.ml" 126 3575 3579 "smt_utils.ml" 126 3575 3585
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 126 3575 3588 "smt_utils.ml" 126 3575 3596
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 126 3575 3579 "smt_utils.ml" 126 3575 3596
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 126 3575 3612 "smt_utils.ml" 126 3575 3620
+type(
+  Aez.Smt.Term.operator
+)
+"smt_utils.ml" 126 3575 3600 "smt_utils.ml" 126 3575 3620
+type(
+  formula_operator
+)
+"smt_utils.ml" 127 3621 3625 "smt_utils.ml" 127 3621 3631
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 127 3621 3647 "smt_utils.ml" 127 3621 3658
+type(
+  Aez.Smt.Term.operator
+)
+"smt_utils.ml" 127 3621 3635 "smt_utils.ml" 127 3621 3658
+type(
+  formula_operator
+)
+"smt_utils.ml" 128 3659 3663 "smt_utils.ml" 128 3659 3668
+type(
+  Asttypes.op
+)
+"smt_utils.ml" 128 3659 3680 "smt_utils.ml" 128 3659 3693
+type(
+  Aez.Smt.Formula.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t -> Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.make_ite
+)
+"smt_utils.ml" 128 3659 3672 "smt_utils.ml" 128 3659 3693
+type(
+  formula_operator
+)
+"smt_utils.ml" 113 3070 3072 "smt_utils.ml" 128 3659 3693
+type(
+  formula_operator
+)
+"smt_utils.ml" 131 3696 3700 "smt_utils.ml" 131 3696 3715
+type(
+  string -> exp_translation -> Aez.Smt.Formula.t
+)
+ident(
+  def extract_formula "smt_utils.ml" 135 3813 3813 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 131 3696 3716 "smt_utils.ml" 131 3696 3722
+type(
+  string
+)
+ident(
+  def indice "smt_utils.ml" 131 3696 3725 "smt_utils.ml" 133 3756 3811
+)
+"smt_utils.ml" 132 3734 3749 "smt_utils.ml" 132 3734 3750
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f "smt_utils.ml" 132 3734 3754 "smt_utils.ml" 132 3734 3755
+)
+"smt_utils.ml" 132 3734 3738 "smt_utils.ml" 132 3734 3750
+type(
+  exp_translation
+)
+"smt_utils.ml" 132 3734 3754 "smt_utils.ml" 132 3734 3755
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f "smt_utils.ml" 132 3734 3749 "smt_utils.ml" 132 3734 3750
+)
+"smt_utils.ml" 133 3756 3768 "smt_utils.ml" 133 3756 3769
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def t "smt_utils.ml" 133 3756 3773 "smt_utils.ml" 133 3756 3811
+)
+"smt_utils.ml" 133 3756 3760 "smt_utils.ml" 133 3756 3769
+type(
+  exp_translation
+)
+"smt_utils.ml" 133 3756 3773 "smt_utils.ml" 133 3756 3783
+type(
+  fgen_error -> Aez.Smt.Formula.t
+)
+ident(
+  int_ref fgen_error "smt_utils.ml" 73 2064 2068 "smt_utils.ml" 73 2064 2078
+)
+"smt_utils.ml" 133 3756 3800 "smt_utils.ml" 133 3756 3806
+type(
+  string
+)
+ident(
+  int_ref indice "smt_utils.ml" 131 3696 3716 "smt_utils.ml" 131 3696 3722
+)
+"smt_utils.ml" 133 3756 3808 "smt_utils.ml" 133 3756 3809
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref t "smt_utils.ml" 133 3756 3768 "smt_utils.ml" 133 3756 3769
+)
+"smt_utils.ml" 133 3756 3784 "smt_utils.ml" 133 3756 3811
+type(
+  fgen_error
+)
+"smt_utils.ml" 133 3756 3773 "smt_utils.ml" 133 3756 3811
+call(
+  tail
+)
+type(
+  Aez.Smt.Formula.t
+)
+"smt_utils.ml" 131 3696 3725 "smt_utils.ml" 133 3756 3811
+type(
+  exp_translation -> Aez.Smt.Formula.t
+)
+"smt_utils.ml" 135 3813 3817 "smt_utils.ml" 135 3813 3829
+type(
+  exp_translation -> Aez.Smt.Term.t
+)
+ident(
+  def extract_term "smt_utils.ml" 139 3914 3914 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 136 3841 3853 "smt_utils.ml" 136 3841 3854
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def t "smt_utils.ml" 136 3841 3858 "smt_utils.ml" 136 3841 3859
+)
+"smt_utils.ml" 136 3841 3845 "smt_utils.ml" 136 3841 3854
+type(
+  exp_translation
+)
+"smt_utils.ml" 136 3841 3858 "smt_utils.ml" 136 3841 3859
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref t "smt_utils.ml" 136 3841 3853 "smt_utils.ml" 136 3841 3854
+)
+"smt_utils.ml" 137 3860 3875 "smt_utils.ml" 137 3860 3876
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f "smt_utils.ml" 137 3860 3880 "smt_utils.ml" 137 3860 3912
+)
+"smt_utils.ml" 137 3860 3864 "smt_utils.ml" 137 3860 3876
+type(
+  exp_translation
+)
+"smt_utils.ml" 137 3860 3880 "smt_utils.ml" 137 3860 3890
+type(
+  fgen_error -> Aez.Smt.Term.t
+)
+ident(
+  int_ref fgen_error "smt_utils.ml" 73 2064 2068 "smt_utils.ml" 73 2064 2078
+)
+"smt_utils.ml" 137 3860 3910 "smt_utils.ml" 137 3860 3911
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f "smt_utils.ml" 137 3860 3875 "smt_utils.ml" 137 3860 3876
+)
+"smt_utils.ml" 137 3860 3891 "smt_utils.ml" 137 3860 3912
+type(
+  fgen_error
+)
+"smt_utils.ml" 137 3860 3880 "smt_utils.ml" 137 3860 3912
+call(
+  tail
+)
+type(
+  Aez.Smt.Term.t
+)
+"smt_utils.ml" 135 3813 3832 "smt_utils.ml" 137 3860 3912
+type(
+  exp_translation -> Aez.Smt.Term.t
+)
+"smt_utils.ml" 139 3914 3918 "smt_utils.ml" 139 3914 3928
+type(
+  exp_translation -> Aez.Smt.Formula.t
+)
+ident(
+  def to_formula "smt_utils.ml" 143 4025 4025 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 140 3940 3952 "smt_utils.ml" 140 3940 3953
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  def t "smt_utils.ml" 140 3940 3957 "smt_utils.ml" 140 3940 4001
+)
+"smt_utils.ml" 140 3940 3944 "smt_utils.ml" 140 3940 3953
+type(
+  exp_translation
+)
+"smt_utils.ml" 140 3940 3957 "smt_utils.ml" 140 3940 3973
+type(
+  Aez.Smt.Formula.comparator -> Aez.Smt.Term.t list -> Aez.Smt.Formula.t
+)
+ident(
+  ext_ref Aez.Smt.Formula.make_lit
+)
+"smt_utils.ml" 140 3940 3974 "smt_utils.ml" 140 3940 3984
+type(
+  Aez.Smt.Formula.comparator
+)
+"smt_utils.ml" 140 3940 3986 "smt_utils.ml" 140 3940 3987
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  int_ref t "smt_utils.ml" 140 3940 3952 "smt_utils.ml" 140 3940 3953
+)
+"smt_utils.ml" 140 3940 3989 "smt_utils.ml" 140 3940 4000
+type(
+  Aez.Smt.Term.t
+)
+ident(
+  ext_ref Aez.Smt.Term.t_true
+)
+"smt_utils.ml" 140 3940 3985 "smt_utils.ml" 140 3940 4001
+type(
+  Aez.Smt.Term.t list
+)
+"smt_utils.ml" 140 3940 3957 "smt_utils.ml" 140 3940 4001
+call(
+  tail
+)
+type(
+  Aez.Smt.Formula.t
+)
+"smt_utils.ml" 141 4002 4017 "smt_utils.ml" 141 4002 4018
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  def f "smt_utils.ml" 141 4002 4022 "smt_utils.ml" 141 4002 4023
+)
+"smt_utils.ml" 141 4002 4006 "smt_utils.ml" 141 4002 4018
+type(
+  exp_translation
+)
+"smt_utils.ml" 141 4002 4022 "smt_utils.ml" 141 4002 4023
+type(
+  Aez.Smt.Formula.t
+)
+ident(
+  int_ref f "smt_utils.ml" 141 4002 4017 "smt_utils.ml" 141 4002 4018
+)
+"smt_utils.ml" 139 3914 3931 "smt_utils.ml" 141 4002 4023
+type(
+  exp_translation -> Aez.Smt.Formula.t
+)
+"smt_utils.ml" 145 4087 4109 "smt_utils.ml" 145 4087 4124
+call(
+  stack
+)
+"smt_utils.ml" 147 4126 4130 "smt_utils.ml" 147 4126 4144
+type(
+  string -> Aez.Smt.Type.t list -> Aez.Smt.Type.t -> Aez.Hstring.t
+)
+ident(
+  def declare_symbol "smt_utils.ml" 153 4232 4232 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 147 4126 4145 "smt_utils.ml" 147 4126 4149
+type(
+  string
+)
+ident(
+  def name "smt_utils.ml" 147 4126 4150 "smt_utils.ml" 150 4226 4229
+)
+"smt_utils.ml" 147 4126 4150 "smt_utils.ml" 147 4126 4154
+type(
+  Aez.Smt.Type.t list
+)
+ident(
+  def t_in "smt_utils.ml" 147 4126 4155 "smt_utils.ml" 150 4226 4229
+)
+"smt_utils.ml" 147 4126 4155 "smt_utils.ml" 147 4126 4160
+type(
+  Aez.Smt.Type.t
+)
+ident(
+  def t_out "smt_utils.ml" 148 4163 4165 "smt_utils.ml" 150 4226 4229
+)
+"smt_utils.ml" 148 4163 4169 "smt_utils.ml" 148 4163 4170
+type(
+  Aez.Hstring.t
+)
+ident(
+  def x "smt_utils.ml" 149 4194 4196 "smt_utils.ml" 150 4226 4229
+)
+"smt_utils.ml" 148 4163 4173 "smt_utils.ml" 148 4163 4185
+type(
+  string -> Aez.Hstring.t
+)
+ident(
+  ext_ref Aez.Hstring.make
+)
+"smt_utils.ml" 148 4163 4186 "smt_utils.ml" 148 4163 4190
+type(
+  string
+)
+ident(
+  int_ref name "smt_utils.ml" 147 4126 4145 "smt_utils.ml" 147 4126 4149
+)
+"smt_utils.ml" 148 4163 4173 "smt_utils.ml" 148 4163 4190
+call(
+  stack
+)
+type(
+  Aez.Hstring.t
+)
+"smt_utils.ml" 149 4194 4196 "smt_utils.ml" 149 4194 4210
+type(
+  Aez.Hstring.t -> Aez.Smt.Type.t list -> Aez.Smt.Type.t -> unit
+)
+ident(
+  ext_ref Aez.Smt.Symbol.declare
+)
+"smt_utils.ml" 149 4194 4211 "smt_utils.ml" 149 4194 4212
+type(
+  Aez.Hstring.t
+)
+ident(
+  int_ref x "smt_utils.ml" 148 4163 4169 "smt_utils.ml" 148 4163 4170
+)
+"smt_utils.ml" 149 4194 4213 "smt_utils.ml" 149 4194 4217
+type(
+  Aez.Smt.Type.t list
+)
+ident(
+  int_ref t_in "smt_utils.ml" 147 4126 4150 "smt_utils.ml" 147 4126 4154
+)
+"smt_utils.ml" 149 4194 4218 "smt_utils.ml" 149 4194 4223
+type(
+  Aez.Smt.Type.t
+)
+ident(
+  int_ref t_out "smt_utils.ml" 147 4126 4155 "smt_utils.ml" 147 4126 4160
+)
+"smt_utils.ml" 149 4194 4196 "smt_utils.ml" 149 4194 4223
+call(
+  stack
+)
+type(
+  unit
+)
+"smt_utils.ml" 150 4226 4228 "smt_utils.ml" 150 4226 4229
+type(
+  Aez.Hstring.t
+)
+ident(
+  int_ref x "smt_utils.ml" 148 4163 4169 "smt_utils.ml" 148 4163 4170
+)
+"smt_utils.ml" 149 4194 4196 "smt_utils.ml" 150 4226 4229
+type(
+  Aez.Hstring.t
+)
+"smt_utils.ml" 148 4163 4165 "smt_utils.ml" 150 4226 4229
+type(
+  Aez.Hstring.t
+)
+"smt_utils.ml" 153 4232 4240 "smt_utils.ml" 153 4232 4262
+type(
+  Aez.Hstring.t VarToSymbols.t ->
+  (VarToSymbols.key * Asttypes.base_ty) list -> Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  def declare_symbols_in_map "smt_utils.ml" 153 4232 4232 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 153 4232 4263 "smt_utils.ml" 153 4232 4266
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  def map "smt_utils.ml" 153 4232 4267 "smt_utils.ml" 162 4497 4534
+)
+"smt_utils.ml" 153 4232 4267 "smt_utils.ml" 153 4232 4275
+type(
+  (VarToSymbols.key * Asttypes.base_ty) list
+)
+ident(
+  def var_list "smt_utils.ml" 154 4278 4280 "smt_utils.ml" 162 4497 4534
+)
+"smt_utils.ml" 154 4278 4286 "smt_utils.ml" 154 4278 4294
+type(
+  (VarToSymbols.key * Asttypes.base_ty) list
+)
+ident(
+  int_ref var_list "smt_utils.ml" 153 4232 4267 "smt_utils.ml" 153 4232 4275
+)
+"smt_utils.ml" 155 4300 4303 "smt_utils.ml" 155 4300 4305
+type(
+  (VarToSymbols.key * Asttypes.base_ty) list
+)
+"smt_utils.ml" 155 4300 4309 "smt_utils.ml" 155 4300 4312
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  int_ref map "smt_utils.ml" 153 4232 4263 "smt_utils.ml" 153 4232 4266
+)
+"smt_utils.ml" 156 4313 4317 "smt_utils.ml" 156 4313 4319
+type(
+  VarToSymbols.key * Asttypes.base_ty
+)
+ident(
+  def hd "smt_utils.ml" 157 4329 4330 "smt_utils.ml" 162 4497 4534
+)
+"smt_utils.ml" 156 4313 4323 "smt_utils.ml" 156 4313 4325
+type(
+  (VarToSymbols.key * Asttypes.base_ty) list
+)
+ident(
+  def tl "smt_utils.ml" 157 4329 4330 "smt_utils.ml" 162 4497 4534
+)
+"smt_utils.ml" 156 4313 4317 "smt_utils.ml" 156 4313 4325
+type(
+  (VarToSymbols.key * Asttypes.base_ty) list
+)
+"smt_utils.ml" 157 4329 4334 "smt_utils.ml" 157 4329 4336
+type(
+  VarToSymbols.key
+)
+ident(
+  def id "smt_utils.ml" 158 4349 4350 "smt_utils.ml" 162 4497 4534
+)
+"smt_utils.ml" 157 4329 4339 "smt_utils.ml" 157 4329 4342
+type(
+  VarToSymbols.key * Asttypes.base_ty -> VarToSymbols.key
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"smt_utils.ml" 157 4329 4343 "smt_utils.ml" 157 4329 4345
+type(
+  VarToSymbols.key * Asttypes.base_ty
+)
+ident(
+  int_ref hd "smt_utils.ml" 156 4313 4317 "smt_utils.ml" 156 4313 4319
+)
+"smt_utils.ml" 157 4329 4339 "smt_utils.ml" 157 4329 4345
+type(
+  VarToSymbols.key
+)
+"smt_utils.ml" 158 4349 4354 "smt_utils.ml" 158 4349 4361
+type(
+  Asttypes.base_ty
+)
+ident(
+  def id_type "smt_utils.ml" 159 4374 4375 "smt_utils.ml" 162 4497 4534
+)
+"smt_utils.ml" 158 4349 4364 "smt_utils.ml" 158 4349 4367
+type(
+  VarToSymbols.key * Asttypes.base_ty -> Asttypes.base_ty
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"smt_utils.ml" 158 4349 4368 "smt_utils.ml" 158 4349 4370
+type(
+  VarToSymbols.key * Asttypes.base_ty
+)
+ident(
+  int_ref hd "smt_utils.ml" 156 4313 4317 "smt_utils.ml" 156 4313 4319
+)
+"smt_utils.ml" 158 4349 4364 "smt_utils.ml" 158 4349 4370
+type(
+  Asttypes.base_ty
+)
+"smt_utils.ml" 159 4374 4379 "smt_utils.ml" 159 4374 4386
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  def new_map "smt_utils.ml" 162 4497 4501 "smt_utils.ml" 162 4497 4534
+)
+"smt_utils.ml" 159 4374 4389 "smt_utils.ml" 159 4374 4405
+type(
+  VarToSymbols.key ->
+  Aez.Hstring.t ->
+  Aez.Hstring.t VarToSymbols.t -> Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  ext_ref VarToSymbols.add
+)
+"smt_utils.ml" 159 4374 4406 "smt_utils.ml" 159 4374 4408
+type(
+  VarToSymbols.key
+)
+ident(
+  int_ref id "smt_utils.ml" 157 4329 4334 "smt_utils.ml" 157 4329 4336
+)
+"smt_utils.ml" 160 4409 4413 "smt_utils.ml" 160 4409 4427
+type(
+  string -> Aez.Smt.Type.t list -> Aez.Smt.Type.t -> Aez.Hstring.t
+)
+ident(
+  int_ref declare_symbol "smt_utils.ml" 147 4126 4130 "smt_utils.ml" 147 4126 4144
+)
+"smt_utils.ml" 160 4409 4429 "smt_utils.ml" 160 4409 4444
+type(
+  VarToSymbols.key -> string
+)
+ident(
+  ext_ref Ident.string_of
+)
+"smt_utils.ml" 160 4409 4445 "smt_utils.ml" 160 4409 4447
+type(
+  VarToSymbols.key
+)
+ident(
+  int_ref id "smt_utils.ml" 157 4329 4334 "smt_utils.ml" 157 4329 4336
+)
+"smt_utils.ml" 160 4409 4428 "smt_utils.ml" 160 4409 4448
+call(
+  stack
+)
+type(
+  string
+)
+"smt_utils.ml" 160 4409 4450 "smt_utils.ml" 160 4409 4463
+type(
+  Aez.Smt.Type.t
+)
+ident(
+  ext_ref Aez.Smt.Type.type_int
+)
+"smt_utils.ml" 160 4409 4449 "smt_utils.ml" 160 4409 4464
+type(
+  Aez.Smt.Type.t list
+)
+"smt_utils.ml" 160 4409 4466 "smt_utils.ml" 160 4409 4478
+type(
+  Asttypes.base_ty -> Aez.Smt.Type.t
+)
+ident(
+  int_ref translate_ty "smt_utils.ml" 106 2915 2919 "smt_utils.ml" 106 2915 2931
+)
+"smt_utils.ml" 160 4409 4479 "smt_utils.ml" 160 4409 4486
+type(
+  Asttypes.base_ty
+)
+ident(
+  int_ref id_type "smt_utils.ml" 158 4349 4354 "smt_utils.ml" 158 4349 4361
+)
+"smt_utils.ml" 160 4409 4465 "smt_utils.ml" 160 4409 4487
+call(
+  stack
+)
+type(
+  Aez.Smt.Type.t
+)
+"smt_utils.ml" 160 4409 4412 "smt_utils.ml" 160 4409 4488
+call(
+  stack
+)
+type(
+  Aez.Hstring.t
+)
+"smt_utils.ml" 161 4489 4492 "smt_utils.ml" 161 4489 4495
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  int_ref map "smt_utils.ml" 153 4232 4263 "smt_utils.ml" 153 4232 4266
+)
+"smt_utils.ml" 159 4374 4389 "smt_utils.ml" 161 4489 4495
+call(
+  stack
+)
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+"smt_utils.ml" 162 4497 4501 "smt_utils.ml" 162 4497 4523
+type(
+  Aez.Hstring.t VarToSymbols.t ->
+  (VarToSymbols.key * Asttypes.base_ty) list -> Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  int_ref declare_symbols_in_map "smt_utils.ml" 153 4232 4240 "smt_utils.ml" 153 4232 4262
+)
+"smt_utils.ml" 162 4497 4524 "smt_utils.ml" 162 4497 4531
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  int_ref new_map "smt_utils.ml" 159 4374 4379 "smt_utils.ml" 159 4374 4386
+)
+"smt_utils.ml" 162 4497 4532 "smt_utils.ml" 162 4497 4534
+type(
+  (VarToSymbols.key * Asttypes.base_ty) list
+)
+ident(
+  int_ref tl "smt_utils.ml" 156 4313 4323 "smt_utils.ml" 156 4313 4325
+)
+"smt_utils.ml" 162 4497 4501 "smt_utils.ml" 162 4497 4534
+call(
+  tail
+)
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+"smt_utils.ml" 159 4374 4375 "smt_utils.ml" 162 4497 4534
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+"smt_utils.ml" 158 4349 4350 "smt_utils.ml" 162 4497 4534
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+"smt_utils.ml" 157 4329 4330 "smt_utils.ml" 162 4497 4534
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+"smt_utils.ml" 154 4278 4280 "smt_utils.ml" 162 4497 4534
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+"smt_utils.ml" 164 4536 4540 "smt_utils.ml" 164 4536 4555
+type(
+  (VarToSymbols.key * Asttypes.base_ty) list -> Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  def declare_symbols "smt_utils.ml" 167 4621 4621 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 164 4536 4556 "smt_utils.ml" 164 4536 4564
+type(
+  (VarToSymbols.key * Asttypes.base_ty) list
+)
+ident(
+  def var_list "smt_utils.ml" 165 4567 4569 "smt_utils.ml" 165 4567 4619
+)
+"smt_utils.ml" 165 4567 4569 "smt_utils.ml" 165 4567 4591
+type(
+  Aez.Hstring.t VarToSymbols.t ->
+  (VarToSymbols.key * Asttypes.base_ty) list -> Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  int_ref declare_symbols_in_map "smt_utils.ml" 153 4232 4240 "smt_utils.ml" 153 4232 4262
+)
+"smt_utils.ml" 165 4567 4592 "smt_utils.ml" 165 4567 4610
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+ident(
+  ext_ref VarToSymbols.empty
+)
+"smt_utils.ml" 165 4567 4611 "smt_utils.ml" 165 4567 4619
+type(
+  (VarToSymbols.key * Asttypes.base_ty) list
+)
+ident(
+  int_ref var_list "smt_utils.ml" 164 4536 4556 "smt_utils.ml" 164 4536 4564
+)
+"smt_utils.ml" 165 4567 4569 "smt_utils.ml" 165 4567 4619
+call(
+  tail
+)
+type(
+  Aez.Hstring.t VarToSymbols.t
+)
+"smt_utils.ml" 167 4621 4625 "smt_utils.ml" 167 4621 4632
+type(
+  VarToSymbols.key -> 'a VarToSymbols.t -> 'a
+)
+ident(
+  def find_id "smt_utils.ml" 168 4642 4724 "smt_utils.ml" 1 0 -1
+)
+"smt_utils.ml" 167 4621 4633 "smt_utils.ml" 167 4621 4635
+type(
+  VarToSymbols.key
+)
+ident(
+  def id "smt_utils.ml" 167 4621 4636 "smt_utils.ml" 168 4642 4724
+)
+"smt_utils.ml" 167 4621 4636 "smt_utils.ml" 167 4621 4639
+type(
+  'a VarToSymbols.t
+)
+ident(
+  def map "smt_utils.ml" 168 4642 4644 "smt_utils.ml" 168 4642 4724
+)
+"smt_utils.ml" 168 4642 4648 "smt_utils.ml" 168 4642 4665
+type(
+  VarToSymbols.key -> 'a VarToSymbols.t -> 'a
+)
+ident(
+  ext_ref VarToSymbols.find
+)
+"smt_utils.ml" 168 4642 4666 "smt_utils.ml" 168 4642 4668
+type(
+  VarToSymbols.key
+)
+ident(
+  int_ref id "smt_utils.ml" 167 4621 4633 "smt_utils.ml" 167 4621 4635
+)
+"smt_utils.ml" 168 4642 4669 "smt_utils.ml" 168 4642 4672
+type(
+  'a VarToSymbols.t
+)
+ident(
+  int_ref map "smt_utils.ml" 167 4621 4636 "smt_utils.ml" 167 4621 4639
+)
+"smt_utils.ml" 168 4642 4648 "smt_utils.ml" 168 4642 4672
+call(
+  stack
+)
+type(
+  'a
+)
+"smt_utils.ml" 168 4642 4678 "smt_utils.ml" 168 4642 4687
+type(
+  exn
+)
+"smt_utils.ml" 168 4642 4691 "smt_utils.ml" 168 4642 4699
+type(
+  string -> 'a
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"smt_utils.ml" 168 4642 4700 "smt_utils.ml" 168 4642 4724
+type(
+  string
+)
+"smt_utils.ml" 168 4642 4691 "smt_utils.ml" 168 4642 4724
+call(
+  tail
+)
+type(
+  'a
+)
+"smt_utils.ml" 168 4642 4644 "smt_utils.ml" 168 4642 4724
+type(
+  'a
+)

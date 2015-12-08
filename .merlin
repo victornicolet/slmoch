@@ -1,0 +1,6 @@
+S src
+S examples
+S lib/**
+
+B src/_build
+B lib/aez-0.3/
