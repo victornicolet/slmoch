@@ -6,4 +6,5 @@ lib/*
 *.o
 *.annot
 *.ml.depends
-
+src/_build
+src/lmoch
