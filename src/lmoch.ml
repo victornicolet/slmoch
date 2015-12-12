@@ -30,6 +30,7 @@ let spec =
    "-type-only", Arg.Set type_only, "  stops after typing";
    "-norm-only", Arg.Set norm_only, "  stops after normalization";
    "-verbose", Arg.Set verbose, "print intermediate transformations";
+   "-verbose-solve", Arg.Set Solve.verbose, "verbose solve";
    "-v", Arg.Set verbose, "print intermediate transformations";
   ]
 
@@ -99,7 +100,7 @@ let () =
 	  Format.fprintf 
 		Config.formatter "@.Delta_incr :@.%a@.Invariant:@.%a@.@." 
 		Smt_utils.pp_formula
-		((fst formula) m) Formula.print ((snd formula) m);
+		(snd ((fst formula) m)) Formula.print ((snd formula) m);
 	  Format.printf "@./**************************************/@.";
 	  Format.printf "/* Checking...                        */@.";
 	  Format.printf "/**************************************/@.";

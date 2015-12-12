@@ -7,6 +7,7 @@ module BMC_solver = Smt.Make(struct end)
 module IND_solver = Smt.Make(struct end)
 
 let path_compression = ref true
+let verbose = ref false
 
 let base_case delta_incr ok k =
   let rec assume j =
@@ -48,7 +49,9 @@ let ind_case n delta_incr ok k =
   IND_solver.check ();
   IND_solver.entails ~id:0 (ok (tplus kt_p_k one))
 
-let solve_k n acc (delta_incr, ok) k =
+let solve_k n acc f k =
+  let delta_incr = incr_part f in
+  let ok = ok_part f in
   let base, entailments_acc = base_case_incr acc delta_incr ok k in
   let induction = ind_case n delta_incr ok k in
   let next_step = 
@@ -65,7 +68,11 @@ let solve_k n acc (delta_incr, ok) k =
   next_step, entailments_acc
 
 let rec kindly n acc f k =
-  let hstrp = (fun s fmt () -> Aez.Hstring.print fmt s) in
+	if !verbose then
+	  begin
+	  print_string "k = "; print_int k; print_endline "..."
+  end;
+	let hstrp = (fun s fmt () -> Aez.Hstring.print fmt s) in
   try
 	begin
 	  match solve_k n acc f k with
@@ -90,5 +97,5 @@ let rec kindly n acc f k =
 (** Main *)
 let this f =
     let n = Term.make_app (declare_symbol "n" [] Type.type_int) [] in
-	init_ind_case n (fst f);
+	init_ind_case n (incr_part f);
 	kindly n empty_f f 0

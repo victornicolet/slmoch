@@ -238,9 +238,9 @@ and normalize_equation nodes node e =
   let (locals, new_eqs), e' = normalize nodes ([],[]) e.teq_expr in
   { node with
     tn_local = locals@node.tn_local;
-    tn_equs = { e with teq_expr = e' } :: 
-	  (List.rev (detuplify new_eqs)) @ (detuplify node.tn_equs) }
-
+    tn_equs = detuplify 
+	  ({ e with teq_expr = e' }:: (List.rev new_eqs) @ (node.tn_equs))
+  }
 let file node_list =
   let node_map = List.fold_left 
 	(fun map n -> NodeMap.add n.tn_name n map)

@@ -167,3 +167,8 @@ let declare_symbols var_list =
 let find_id id map =
   try VarToSymbols.find id map with Not_found -> failwith "Ident not found in map"
 
+let cond_append elt elt_list =
+  if List.mem elt elt_list then elt_list else elt::elt_list
+
+let incr_part f = fun n -> snd ((fst f) n)
+let ok_part f = snd f
