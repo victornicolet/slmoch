@@ -5,8 +5,6 @@ open Smt
 open Smt_utils
 open Set
 
-let term_zero = Term.make_int (Num.Int 0)
-let term_one = Term.make_int (Num.Int 1)
 
 
 let rec gen_term_of_exp n state_vars ids exp =
@@ -67,16 +65,16 @@ let rec gen_term_of_exp n state_vars ids exp =
   | TE_pre (expr) ->
 	let  sv, pre_exp = 
 	  gen_term_of_exp
-		(Term.make_arith Term.Minus n term_one) state_vars ids expr
+		(Term.make_arith Term.Minus n one) state_vars ids expr
 	in
-	cond_append pre_exp sv, pre_exp
+	(cond_append pre_exp sv), pre_exp
 
   | TE_arrow (e1, e2) -> 
 	let sv0, f1 = gen_term_of_exp n state_vars ids e1 in
 	let sv, f2 = gen_term_of_exp n sv0 ids e2 in
 	let term = Term.make_ite
 	  (Formula.make_lit Formula.Eq 
-		 [n; term_zero])
+		 [n; zero])
 	  (extract_term f1) (extract_term f2)
 	in sv,  ExpTerm(term)
 
@@ -122,6 +120,7 @@ let gen_formula_of_eqn n state_vars v_to_s {teq_patt = tp; teq_expr = te}  =
 		  Formula.make Formula.Imp [f; fx]
 		]
   in
+  print_int (List.length sv);
   sv, formula
 
 let gen_formula_node node =
@@ -134,8 +133,8 @@ let gen_formula_node node =
 	match eqn_list with
 	| [] ->  [], []
 	| hd :: tl ->
-	  let sv, hd_f = gen_formula_of_eqn n  state_vars v_to_s hd in
-	  let nsv, formulas = aux_el sv v_to_s tl n in
+	  let sv, formulas = aux_el state_vars v_to_s tl n in
+	  let nsv, hd_f = gen_formula_of_eqn n  sv v_to_s hd in
 	  nsv,  (hd_f) :: formulas
   in
   (* Invariant à prouver *)
