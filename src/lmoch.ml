@@ -102,8 +102,8 @@ let () =
 		Smt_utils.pp_formula
 		(snd ((fst formula) m)) Formula.print ((snd formula) m);
 	  Format.printf "@./**************************************/@.";
-	  Format.printf "/* Checking...                        */@.";
-	  Format.printf "/**************************************/@.";
+	  Format.printf "/* Checking...                          */@.";
+	  Format.printf "/****************************************/@.";
 	end;
 
 	Solve.this formula;

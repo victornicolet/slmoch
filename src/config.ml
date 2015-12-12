@@ -1,4 +1,5 @@
 let formatter = Format.std_formatter
+let kinduction_limit = ref 200
 
 let cdef = "\x1b[0m"
 let cred = "\x1b[31m"
