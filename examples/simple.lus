@@ -1,0 +1,6 @@
+node check (a,b : bool) returns (ok : bool);
+var tmp : bool;
+let
+  tmp = true -> pre (true -> a) or (if (pre b) then pre a else b);
+  ok = true -> pre tmp;
+tel

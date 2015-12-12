@@ -8,3 +8,6 @@ lib/*
 *.ml.depends
 src/_build
 src/lmoch
+examples/#*
+examples/.*
+*.ec

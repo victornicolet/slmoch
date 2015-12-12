@@ -1,0 +1,31 @@
+node counter(sec, bal : bool) returns (ontime, late, ahead: bool);
+var diff : int;
+let
+  diff = (0 -> pre diff) + (if bal then 1 else 0) + (if sec then -1 else 0);
+  ahead = (true-> pre ontime) and (diff > 3)  or (false -> pre ahead ) and (diff > 1);
+  late = (true-> pre ontime) and (diff < -3)  or (false -> pre late) and (diff < -1);
+  ontime = not (ahead or late);
+tel
+
+node not_ahead_and_late(sec, bal: bool) returns (ok: bool);
+var ontime, late, ahead : bool;
+let
+  (ontime, late, ahead) = counter(sec, bal);
+  ok = not (ahead and late);
+tel
+
+node late_then_ahead(sec,bal: bool) returns (ok:bool);
+var ot, ah, la: bool;
+let
+  (ot, la, ah) = counter(sec, bal);
+  ok = true -> ((not pre la) and ah);
+tel
+
+node late_once_always_late(sec, bal: bool) returns (ok:bool);
+var ot, ah, la, pp_la, p_la : bool;
+let
+  (ot, la, ah) = counter(sec, bal);
+  p_la = false -> pre la;
+  pp_la = false -> pre p_la;
+  ok =  ((not pp_la) and p_la) or (not la);
+tel
