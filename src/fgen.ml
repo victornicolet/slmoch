@@ -120,7 +120,6 @@ let gen_formula_of_eqn n state_vars v_to_s {teq_patt = tp; teq_expr = te}  =
 		  Formula.make Formula.Imp [f; fx]
 		]
   in
-  print_int (List.length sv);
   sv, formula
 
 let gen_formula_node node =
