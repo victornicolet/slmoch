@@ -1,0 +1,7 @@
+node check (a : bool) returns (ok : bool);
+var a0, b: bool;
+let
+  a0 = true -> pre b;
+  b = true -> pre a0;
+  ok = a or b;
+tel
