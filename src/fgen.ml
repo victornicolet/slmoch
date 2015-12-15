@@ -28,10 +28,10 @@ let rec gen_term_of_exp n state_vars ids exp =
 	  match wrapped_op with 
 	  | FormOpComp comp -> 
 		ExpFormula (Formula.make_lit comp
-					  (List.map extract_term term_list))
+					  (List.map extract_term (List.rev term_list)))
 	  | FormOpComb comb ->
 		ExpFormula (Formula.make comb
-					  (List.map to_formula term_list))
+					  (List.map to_formula (List.rev term_list)))
 	  | FormOpArith op ->
 		let n_args = List.length term_list in
 		assert(n_args = 1 || n_args = 2);
