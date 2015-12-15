@@ -34,14 +34,6 @@ let rec pp_formula fmt phi =
 	  fprintf fmt "%a @ %s%s%s%s %a"
 		pp_formula f cbold cblue sep cdef (print_list sep) l
 
-let pp_term fmt term =
-  ()
-
-let rec pp_term_list fmt tl =
-  match tl with
-  | [] -> print_endline "End list"
-  | hd :: tl ->
-	pp_term fmt tl; print_string "-"; pp_term_list fmt tl
 
 let rec p_il fmt = function
 	| [] -> ()
@@ -199,3 +191,24 @@ let cond_append elt elt_list =
 let incr_part f = fun n -> snd ((fst f) n)
 let ok_part f = snd f
 let state_part f = fun n -> fst ((fst f) n)
+
+
+let rec pp_term_list fmt term_list =
+  let rec aux term_list i =
+	match term_list with
+	| [] -> ()
+	| hd :: tl ->
+	  begin
+		match hd with 
+		| ExpTerm t -> pp_term fmt t i
+		| ExpFormula f -> Smt.Formula.print fmt f
+	  end;
+	  print_endline ""; aux tl (i+1)
+  in
+  aux term_list 0
+
+and pp_term fmt term i =
+  let t_name = String.concat "_" ["term"; string_of_int(i)] in
+  let t = Term.make_app (declare_symbol t_name [] Type.type_int) [] in
+  let term_formula = Formula.make_lit Formula.Eq [t ; term] in
+  Formula.print fmt term_formula
