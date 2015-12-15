@@ -14,7 +14,7 @@ let rec gen_term_of_exp n state_vars ids exp =
 	  match c with
 	  | Cbool b -> ExpTerm (if b then Term.t_true else Term.t_false)
 	  | Cint i -> ExpTerm (Term.make_int (Num.Int i))
-	  | Creal r -> failwith "FUCK THE REAL NUMBERS"
+	  | Creal r -> failwith "Real numbers unsupported"
 	in
 	state_vars, term
 
@@ -56,10 +56,10 @@ let rec gen_term_of_exp n state_vars ids exp =
 		assert(List.length term_list = 3);
 		ExpTerm (
 		  itemaker  
-			(to_formula (List.nth term_list 0))
+			(to_formula (List.nth term_list 2))
+			(extract_term (List.nth term_list 0))
 			(extract_term (List.nth term_list 1))
-			(extract_term (List.nth term_list 2))
-		) 
+		)
 	in sv, ntl
 
   | TE_pre (expr) ->
