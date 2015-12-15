@@ -5,6 +5,7 @@ open Smt_utils
 
 module BMC_solver = Smt.Make(struct end)
 module IND_solver = Smt.Make(struct end)
+module LOOP_solver = Smt.Make(struct end)
 
 let path_compression = ref true
 let verbose = ref false

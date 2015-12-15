@@ -149,6 +149,23 @@ let to_formula = function
   | ExpTerm t -> Formula.make_lit Formula.Eq [t; Term.t_true]
   | ExpFormula f -> f
 
+let count_types li =
+  let rec ct li i j =
+	match li with
+	| [] -> (i,j)
+	| hd :: tl ->
+	  begin
+		match hd with
+		| ExpTerm _ -> ct tl (i+1) j
+		| ExpFormula _ -> ct tl i (j+1)
+	  end
+  in
+  ct li 0 0
+
+let print_li_type_count fmt li =
+  let (i,j) = count_types li in
+  Format.fprintf fmt "@. %i terms and %i formulas" i j
+
 (** Declare symbols and build maps from idents to symbols *)
 
 module VarToSymbols = Map.Make(Ident)
