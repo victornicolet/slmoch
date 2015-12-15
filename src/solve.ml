@@ -5,6 +5,7 @@ open Smt_utils
 
 module BMC_solver = Smt.Make(struct end)
 module IND_solver = Smt.Make(struct end)
+module LOOP_solver = Smt.Make(struct end)
 
 let path_compression = ref true
 let verbose = ref false
@@ -49,6 +50,29 @@ let ind_case n delta_incr ok k =
   IND_solver.check ();
   IND_solver.entails ~id:0 (ok (tplus kt_p_k one))
 
+(** LOOP **)
+let rec make_loop_cond prev_states new_states =
+  let rec join prev_states new_states =
+	match prev_states with
+	| [] -> []
+	| hd::tl ->
+      (formula_of_trl hd new_states)::(join tl new_states)
+  in
+ Formula.make Formula.Or (join prev_states new_states) 
+
+let check_noloop prev_states states delta_incr k =
+  let kt = tofi k in
+  let states_at_k1 = states (tplus kt one) in
+  let loop_condition = make_loop_cond prev_states states_at_k1 in
+  (if !verbose then
+	  Format.fprintf Config.formatter "LOOP CONDITION %i:@.%a@."
+		k
+		pp_formula loop_condition
+  );
+  let new_states = (states_at_k1)::prev_states in
+  LOOP_solver.assume ~id:0 (delta_incr kt);
+  (LOOP_solver.entails ~id:0 loop_condition), new_states
+
 let solve_k n acc f k =
   let delta_incr = incr_part f in
   let ok = ok_part f in
@@ -76,9 +100,18 @@ let rec kindly n acc f k =
 	if k <= !Config.kinduction_limit then
 	  try
 		begin
-		  match solve_k n acc f k with
+		  match solve_k n (fst acc) f k with
 		  | false, _ -> Format.fprintf Config.formatter "@.DONE @."
-		  | true, entailment_acc -> kindly n entailment_acc f (k+1)
+		  | true, entailment_acc -> 
+			let loopcheck, new_states = 
+			  check_noloop (snd acc) (state_part f) (incr_part f) k
+			in
+			if loopcheck then
+			  Format.fprintf Config.formatter 
+				"@.LOOP AT %i STEP.@. PROPERTY HOLDS @."
+				k
+			else
+			  kindly n (entailment_acc, new_states) f (k+1)
 		end
 	  with
 	  | Smt.Error e -> 
@@ -100,5 +133,6 @@ let rec kindly n acc f k =
 (** Main *)
 let this f =
     let n = Term.make_app (declare_symbol "n" [] Type.type_int) [] in
+	let first_states = (state_part f)(tofi 0) in
 	init_ind_case n (incr_part f);
-	kindly n empty_f f 0
+	kindly n (empty_f,[first_states]) f 0

@@ -102,9 +102,10 @@ let () =
 		Smt_utils.pp_formula
 		((incr_part formula) m) Formula.print ((ok_part formula) m);
 	  Format.fprintf
-		Config.formatter "@.%i State variables :@.%a@."
+		Config.formatter "@.%i State variables :@.%a@.%a@."
 		(List.length ((state_part formula) m))
-		Smt_utils.pp_term_list ((state_part formula) m);
+		Smt_utils.pp_term_list ((state_part formula) m)
+		Smt_utils.print_li_type_count ((state_part formula) m);
 	  Format.printf "@./**************************************/@.";
 	  Format.printf "/* Checking...                          */@.";
 	  Format.printf "/****************************************/@.";

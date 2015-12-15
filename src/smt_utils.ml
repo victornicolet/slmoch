@@ -34,14 +34,6 @@ let rec pp_formula fmt phi =
 	  fprintf fmt "%a @ %s%s%s%s %a"
 		pp_formula f cbold cblue sep cdef (print_list sep) l
 
-let pp_term fmt term =
-  ()
-
-let rec pp_term_list fmt tl =
-  match tl with
-  | [] -> print_endline "End list"
-  | hd :: tl ->
-	pp_term fmt tl; print_string "-"; pp_term_list fmt tl
 
 let rec p_il fmt = function
 	| [] -> ()
@@ -149,6 +141,23 @@ let to_formula = function
   | ExpTerm t -> Formula.make_lit Formula.Eq [t; Term.t_true]
   | ExpFormula f -> f
 
+let count_types li =
+  let rec ct li i j =
+	match li with
+	| [] -> (i,j)
+	| hd :: tl ->
+	  begin
+		match hd with
+		| ExpTerm _ -> ct tl (i+1) j
+		| ExpFormula _ -> ct tl i (j+1)
+	  end
+  in
+  ct li 0 0
+
+let print_li_type_count fmt li =
+  let (i,j) = count_types li in
+  Format.fprintf fmt "@. %i terms and %i formulas" i j
+
 (** Declare symbols and build maps from idents to symbols *)
 
 module VarToSymbols = Map.Make(Ident)
@@ -182,3 +191,46 @@ let cond_append elt elt_list =
 let incr_part f = fun n -> snd ((fst f) n)
 let ok_part f = snd f
 let state_part f = fun n -> fst ((fst f) n)
+
+(** Pretty print terms **)
+
+let rec pp_term_list fmt term_list =
+  let rec aux term_list i =
+	match term_list with
+	| [] -> ()
+	| hd :: tl ->
+	  begin
+		match hd with 
+		| ExpTerm t -> pp_term fmt t i
+		| ExpFormula f -> Smt.Formula.print fmt f
+	  end;
+	  print_endline ""; aux tl (i+1)
+  in
+  aux term_list 0
+
+and pp_term fmt term i =
+  let t_name = String.concat "_" ["term"; string_of_int(i)] in
+  let t = Term.make_app (declare_symbol t_name [] Type.type_int) [] in
+  let term_formula = Formula.make_lit Formula.Eq [t ; term] in
+  Formula.print fmt term_formula
+
+(** Exp_translation paris -> formulas **)
+let make_eq x1 x2 =
+  match x1, x2 with
+  | ExpTerm t1, ExpTerm t2 -> Formula.make_lit Formula.Eq [t1;t2]
+  | ExpFormula f1, ExpFormula f2 -> 
+	let imp1 = Formula.make Formula.Imp [f1;f2] in
+	let imp2 = Formula.make Formula.Imp [f2;f1] in
+	Formula.make Formula.And [imp1;imp2]
+  | _, _ -> failwith "Translations must be of the same type in make_eq"
+
+let rec formula_of_trl tlist1 tlist2 =
+  assert(List.length tlist1 = List.length tlist2);
+  let rec atoms tlist1 tlist2 =
+	match tlist1,tlist2 with
+	|[], [] -> []
+	| hd1::tl1, hd2::tl2 ->
+	  (make_eq hd1 hd2)::(atoms tl1 tl2)
+	| _, _ -> failwith "Formula_of_tl : list of different lengths"
+  in
+  Formula.make Formula.And (atoms tlist1 tlist2)
