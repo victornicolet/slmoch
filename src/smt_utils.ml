@@ -192,6 +192,7 @@ let incr_part f = fun n -> snd ((fst f) n)
 let ok_part f = snd f
 let state_part f = fun n -> fst ((fst f) n)
 
+(** Pretty print terms **)
 
 let rec pp_term_list fmt term_list =
   let rec aux term_list i =
@@ -212,3 +213,24 @@ and pp_term fmt term i =
   let t = Term.make_app (declare_symbol t_name [] Type.type_int) [] in
   let term_formula = Formula.make_lit Formula.Eq [t ; term] in
   Formula.print fmt term_formula
+
+(** Exp_translation paris -> formulas **)
+let make_eq x1 x2 =
+  match x1, x2 with
+  | ExpTerm t1, ExpTerm t2 -> Formula.make_lit Formula.Eq [t1;t2]
+  | ExpFormula f1, ExpFormula f2 -> 
+	let imp1 = Formula.make Formula.Imp [f1;f2] in
+	let imp2 = Formula.make Formula.Imp [f2;f1] in
+	Formula.make Formula.And [imp1;imp2]
+  | _, _ -> failwith "Translations must be of the same type in make_eq"
+
+let rec formula_of_trl tlist1 tlist2 =
+  assert(List.length tlist1 = List.length tlist2);
+  let rec atoms tlist1 tlist2 =
+	match tlist1,tlist2 with
+	|[], [] -> []
+	| hd1::tl1, hd2::tl2 ->
+	  (make_eq hd1 hd2)::(atoms tl1 tl2)
+	| _, _ -> failwith "Formula_of_tl : list of different lengths"
+  in
+  Formula.make Formula.And (atoms tlist1 tlist2)
