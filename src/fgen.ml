@@ -57,8 +57,8 @@ let rec gen_term_of_exp n state_vars ids exp =
 		ExpTerm (
 		  itemaker  
 			(to_formula (List.nth term_list 2))
-			(extract_term (List.nth term_list 0))
 			(extract_term (List.nth term_list 1))
+			(extract_term (List.nth term_list 0))
 		)
 	in sv, ntl
 

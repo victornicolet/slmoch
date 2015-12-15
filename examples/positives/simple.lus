@@ -1,3 +1,8 @@
+node checkif (x:bool) returns (ok: bool);
+let
+  ok = if false then false else true;
+tel
+
 node check1 (a : bool) returns (ok : bool);
 var b,c : bool;
 let
