@@ -73,7 +73,7 @@ let rec gen_term_of_exp n state_vars ids exp =
 	let sv0, f1 = gen_term_of_exp n state_vars ids e1 in
 	let sv, f2 = gen_term_of_exp n sv0 ids e2 in
 	let term = Term.make_ite
-	  (Formula.make_lit Formula.Eq 
+	  (Formula.make_lit Formula.Le 
 		 [n; zero])
 	  (extract_term f1) (extract_term f2)
 	in sv,  ExpTerm(term)
