@@ -34,6 +34,15 @@ let rec pp_formula fmt phi =
 	  fprintf fmt "%a @ %s%s%s%s %a"
 		pp_formula f cbold cblue sep cdef (print_list sep) l
 
+let pp_term fmt term =
+  ()
+
+let rec pp_term_list fmt tl =
+  match tl with
+  | [] -> print_endline "End list"
+  | hd :: tl ->
+	pp_term fmt tl; print_string "-"; pp_term_list fmt tl
+
 let rec p_il fmt = function
 	| [] -> ()
 	| [i] -> print_int i
@@ -167,8 +176,9 @@ let declare_symbols var_list =
 let find_id id map =
   try VarToSymbols.find id map with Not_found -> failwith "Ident not found in map"
 
-let cond_append elt elt_list =
+let cond_append elt elt_list = 
   if List.mem elt elt_list then elt_list else elt::elt_list
 
 let incr_part f = fun n -> snd ((fst f) n)
 let ok_part f = snd f
+let state_part f = fun n -> fst ((fst f) n)

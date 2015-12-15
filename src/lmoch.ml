@@ -100,10 +100,14 @@ let () =
 	  Format.fprintf 
 		Config.formatter "@.Delta_incr :@.%a@.Invariant:@.%a@.@." 
 		Smt_utils.pp_formula
-		(snd ((fst formula) m)) Formula.print ((snd formula) m);
+		((incr_part formula) m) Formula.print ((ok_part formula) m);
+	  Format.fprintf
+		Config.formatter "@.%i State variables :@.%a@."
+		(List.length ((state_part formula) m))
+		Smt_utils.pp_term_list ((state_part formula) m);
 	  Format.printf "@./**************************************/@.";
-	  Format.printf "/* Checking...                        */@.";
-	  Format.printf "/**************************************/@.";
+	  Format.printf "/* Checking...                          */@.";
+	  Format.printf "/****************************************/@.";
 	end;
 
 	Solve.this formula;

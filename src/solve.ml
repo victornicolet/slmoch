@@ -73,26 +73,29 @@ let rec kindly n acc f k =
 	  print_string "k = "; print_int k; print_endline "..."
   end;
 	let hstrp = (fun s fmt () -> Aez.Hstring.print fmt s) in
-  try
-	begin
-	  match solve_k n acc f k with
-	  | false, _ -> Format.fprintf Config.formatter "@.DONE @."
-	  | true, entailment_acc -> kindly n entailment_acc f (k+1)
-	end
-  with
-  | Smt.Error e -> 
-	let str, pp = 
-	  match e with
-	  | Smt.DuplicateSymb s -> "Duplicate symbol ", hstrp s
-	  | Smt.DuplicateTypeName s -> "Duplicate type name ", hstrp s
-	  | Smt.UnknownSymb s-> "Unknown symbol ", hstrp s
-	  | Smt.UnknownType s -> "Unknown type ", hstrp s
-	in
-	 Format.fprintf formatter "%sError in solver :%s @.%s : %a@."
-	   cred cdef str pp ()
-  | Smt.Unsat il ->
-	Format.fprintf formatter "%sError in solver, unsat:%s@%a@."
-	  cred cdef p_il il
+	if k <= !Config.kinduction_limit then
+	  try
+		begin
+		  match solve_k n acc f k with
+		  | false, _ -> Format.fprintf Config.formatter "@.DONE @."
+		  | true, entailment_acc -> kindly n entailment_acc f (k+1)
+		end
+	  with
+	  | Smt.Error e -> 
+		let str, pp = 
+		  match e with
+		  | Smt.DuplicateSymb s -> "Duplicate symbol ", hstrp s
+		  | Smt.DuplicateTypeName s -> "Duplicate type name ", hstrp s
+		  | Smt.UnknownSymb s-> "Unknown symbol ", hstrp s
+		  | Smt.UnknownType s -> "Unknown type ", hstrp s
+		in
+		Format.fprintf formatter "%sError in solver :%s @.%s : %a@."
+		  cred cdef str pp ()
+	  | Smt.Unsat il ->
+		Format.fprintf formatter "%sError in solver, unsat:%s@%a@."
+		  cred cdef p_il il
+	else
+	  Format.fprintf Config.formatter "@.DON'T KNOW@."
 
 (** Main *)
 let this f =

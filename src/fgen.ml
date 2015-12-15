@@ -5,8 +5,6 @@ open Smt
 open Smt_utils
 open Set
 
-let term_zero = Term.make_int (Num.Int 0)
-let term_one = Term.make_int (Num.Int 1)
 
 
 let rec gen_term_of_exp n state_vars ids exp =
@@ -16,7 +14,7 @@ let rec gen_term_of_exp n state_vars ids exp =
 	  match c with
 	  | Cbool b -> ExpTerm (if b then Term.t_true else Term.t_false)
 	  | Cint i -> ExpTerm (Term.make_int (Num.Int i))
-	  | Creal r -> failwith "FUCK THE REAL NUMBERS"
+	  | Creal r -> failwith "Real numbers unsupported"
 	in
 	state_vars, term
 
@@ -30,10 +28,10 @@ let rec gen_term_of_exp n state_vars ids exp =
 	  match wrapped_op with 
 	  | FormOpComp comp -> 
 		ExpFormula (Formula.make_lit comp
-					  (List.map extract_term term_list))
+					  (List.map extract_term (List.rev term_list)))
 	  | FormOpComb comb ->
 		ExpFormula (Formula.make comb
-					  (List.map to_formula term_list))
+					  (List.map to_formula (List.rev term_list)))
 	  | FormOpArith op ->
 		let n_args = List.length term_list in
 		assert(n_args = 1 || n_args = 2);
@@ -58,25 +56,25 @@ let rec gen_term_of_exp n state_vars ids exp =
 		assert(List.length term_list = 3);
 		ExpTerm (
 		  itemaker  
-			(to_formula (List.nth term_list 0))
+			(to_formula (List.nth term_list 2))
 			(extract_term (List.nth term_list 1))
-			(extract_term (List.nth term_list 2))
-		) 
+			(extract_term (List.nth term_list 0))
+		)
 	in sv, ntl
 
   | TE_pre (expr) ->
 	let  sv, pre_exp = 
 	  gen_term_of_exp
-		(Term.make_arith Term.Minus n term_one) state_vars ids expr
+		(Term.make_arith Term.Minus n one) state_vars ids expr
 	in
-	cond_append pre_exp sv, pre_exp
+	(cond_append pre_exp sv), pre_exp
 
   | TE_arrow (e1, e2) -> 
 	let sv0, f1 = gen_term_of_exp n state_vars ids e1 in
 	let sv, f2 = gen_term_of_exp n sv0 ids e2 in
 	let term = Term.make_ite
-	  (Formula.make_lit Formula.Eq 
-		 [n; term_zero])
+	  (Formula.make_lit Formula.Le 
+		 [n; zero])
 	  (extract_term f1) (extract_term f2)
 	in sv,  ExpTerm(term)
 
@@ -134,8 +132,8 @@ let gen_formula_node node =
 	match eqn_list with
 	| [] ->  [], []
 	| hd :: tl ->
-	  let sv, hd_f = gen_formula_of_eqn n  state_vars v_to_s hd in
-	  let nsv, formulas = aux_el sv v_to_s tl n in
+	  let sv, formulas = aux_el state_vars v_to_s tl n in
+	  let nsv, hd_f = gen_formula_of_eqn n  sv v_to_s hd in
 	  nsv,  (hd_f) :: formulas
   in
   (* Invariant à prouver *)
