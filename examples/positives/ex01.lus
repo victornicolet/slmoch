@@ -1,0 +1,7 @@
+node check1 (a : bool) returns (ok : bool);
+var b,c : bool;
+let
+  b = true -> pre (not c);
+  c = false -> pre (not b);
+  ok = c or b;
+tel

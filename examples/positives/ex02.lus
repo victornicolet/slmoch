@@ -1,8 +1,3 @@
-node checkif (x:bool) returns (ok: bool);
-let
-  ok = if false then false else true;
-tel
-
 node check1 (a : bool) returns (ok : bool);
 var b,c : bool;
 let
@@ -17,12 +12,4 @@ let
  b = true -> pre check1(a);
  c = if a then b else true;
  ok = b and c;
-tel
-
-node checkloop (x:bool) returns (ok:bool);
-var a,b:bool;
-let
-  a = true -> pre (false-> b);
-  b = false -> pre (true -> a);
-  ok = a or b;
 tel
