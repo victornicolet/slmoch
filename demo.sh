@@ -19,7 +19,6 @@ read touche
 src/lmoch examples/positives/ex003.lus check -v
 read touche
 echo -e "${clr} Exemple 4: plus complexe ${def}"
-more examples/positives/dragon.lus 
 read touche
 src/lmoch examples/positives/dragon.lus check -v
 read touche
