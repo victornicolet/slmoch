@@ -67,7 +67,7 @@ let rec gen_term_of_exp n state_vars ids exp =
 	  gen_term_of_exp
 		(Term.make_arith Term.Minus n one) state_vars ids expr
 	in
-	(cond_append pre_exp sv), pre_exp
+	(pre_exp::sv), pre_exp
 
   | TE_arrow (e1, e2) -> 
 	let sv0, f1 = gen_term_of_exp n state_vars ids e1 in
