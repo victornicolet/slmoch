@@ -22,12 +22,14 @@ let parse_only = ref false
 let type_only = ref false
 let norm_only = ref false
 let lucy_printer = ref false
+let loop_check = ref false
 let ocaml_printer = ref true
 let verbose = ref false
 
 let spec =
   ["-parse-only", Arg.Set parse_only, "  stops after parsing";
    "-type-only", Arg.Set type_only, "  stops after typing";
+   "-loop-check", Arg.Set loop_check, " checks for loop in base case";
    "-norm-only", Arg.Set norm_only, "  stops after normalization";
    "-verbose", Arg.Set verbose, "print intermediate transformations";
    "-verbose-solve", Arg.Set Solve.verbose, "verbose solve";
@@ -67,6 +69,8 @@ let () =
   let c = open_in file in
   let lb = Lexing.from_channel c in
   try
+	if !verbose then Solve.verbose := true;
+	if !loop_check then Solve.check_for_loops := true;
     let f = Parser.file Lexer.token lb in
     close_in c;
     if !parse_only then exit 0;
@@ -80,32 +84,34 @@ let () =
     if !type_only then exit 0;
 
 	let fn = Normalization.file ft in
-	if !verbose then begin
-	  Format.printf "/**************************************/@.";
-	  Format.printf "/* Normalized ast                     */@.";
-	  Format.printf "/**************************************/@.";
-	  Typed_ast_printer.print_node_list_std fn
-	end; 
-	if !norm_only then exit 0;
 	if main_node = "" then exit 0;
 	let mnode = List.find 
 	  (fun node -> (node.tn_name.name = main_node)) fn 
 	in
+	if !verbose then begin
+	  Format.printf "/**************************************/@.";
+	  Format.printf "/* Normalized node to check           */@.";
+	  Format.printf "/**************************************/@.";
+	  Typed_ast_printer.print_node  Config.formatter mnode;
+	  print_endline "";
+	end; 
+	if !norm_only then exit 0;
 	let formula = Fgen.gen_formula_node mnode in
 	if !verbose then begin
 	  Format.printf "/**************************************/@.";
 	  Format.printf "/* Formula                            */@.";
 	  Format.printf "/**************************************/@.";
-	  let m = Term.make_app (declare_symbol "m" [] Type.type_int) [] in
+	  let 
+		  m = Term.make_app (declare_symbol "m" [] Type.type_int) [] 
+	  in
 	  Format.fprintf 
 		Config.formatter "@.Delta_incr :@.%a@.Invariant:@.%a@.@." 
 		Smt_utils.pp_formula
 		((incr_part formula) m) Formula.print ((ok_part formula) m);
 	  Format.fprintf
-		Config.formatter "@.%i State variables :@.%a@.%a@."
+		Config.formatter "@.%i State variables : @.%a@."
 		(List.length ((state_part formula) m))
-		Smt_utils.pp_term_list ((state_part formula) m)
-		Smt_utils.print_li_type_count ((state_part formula) m);
+		Smt_utils.pp_term_list ((state_part formula) m);
 	  Format.printf "@./**************************************/@.";
 	  Format.printf "/* Checking...                          */@.";
 	  Format.printf "/****************************************/@.";

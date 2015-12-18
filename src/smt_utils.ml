@@ -20,9 +20,11 @@ let rec pp_formula fmt phi =
     match phi with
       | Formula.Lit a -> Literal.LT.print fmt a
       | Formula.Comb (Formula.Not, [f]) -> 
-	  fprintf fmt "%s%snot%s(%a)" cbold cdarkgray cdef pp_formula f
-      | Formula.Comb (Formula.And, l) -> fprintf fmt "@[(%a)@]" (print_list "and") l
-      | Formula.Comb (Formula.Or, l) ->  fprintf fmt "@[(%a)@]" (print_list "or") l
+		fprintf fmt "%s%snot%s(%a)" cbold cdarkgray cdef pp_formula f
+      | Formula.Comb (Formula.And, l) ->
+		fprintf fmt "@[(%a)@]" (print_list "and") l
+      | Formula.Comb (Formula.Or, l) ->  
+		fprintf fmt "@[(%a)@]" (print_list "or") l
       | Formula.Comb (Formula.Imp, [f1; f2]) -> 
 	  fprintf fmt "@[<1>(%a %s%s=>%s %a)@]"
 		pp_formula f1 cbold cblue cdef pp_formula f2
@@ -101,7 +103,9 @@ let revert_comp e =
   
 (* Types of expressions must not be tuples *)
 let type_of_expr = 
-  fun e -> match e.texpr_type with [t] -> t | _ -> fgen_error (NotNormalizedForm e)
+  fun e -> match e.texpr_type with 
+	[t] -> t | _ ->
+	fgen_error (NotNormalizedForm e)
 
 
 let translate_ty ast_type =
@@ -183,7 +187,9 @@ let declare_symbols var_list =
   declare_symbols_in_map VarToSymbols.empty var_list
 
 let find_id id map =
-  try VarToSymbols.find id map with Not_found -> failwith "Ident not found in map"
+  try 
+	VarToSymbols.find id map
+  with Not_found -> failwith "Ident not found in map"
 
 let cond_append elt elt_list = 
   if List.mem elt elt_list then elt_list else elt::elt_list
@@ -214,7 +220,7 @@ and pp_term fmt term i =
   let term_formula = Formula.make_lit Formula.Eq [t ; term] in
   Formula.print fmt term_formula
 
-(** Exp_translation paris -> formulas **)
+(** Exp_translation pairs -> formulas **)
 let make_eq x1 x2 =
   match x1, x2 with
   | ExpTerm t1, ExpTerm t2 -> Formula.make_lit Formula.Eq [t1;t2]

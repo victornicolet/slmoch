@@ -7,8 +7,12 @@ module BMC_solver = Smt.Make(struct end)
 module IND_solver = Smt.Make(struct end)
 module LOOP_solver = Smt.Make(struct end)
 
+module Solver_state_map = Map.Make(Int32)
+
 let path_compression = ref true
+let check_for_loops = ref false
 let verbose = ref false
+let smap = Solver_state_map.empty
 
 let base_case delta_incr ok k =
   let rec assume j =
@@ -81,12 +85,12 @@ let solve_k n acc f k =
   let next_step = 
 	match base, induction with
 	| false, _ -> 
-	  Format.fprintf Config.formatter "@.FALSE PROPERTY, k = %i@." k; 
+	  Format.fprintf Config.formatter "@.%s FALSE %s PROPERTY, k = %i@." bred cdef k; 
 	  false
 	| true, false -> 
 	  true
 	| true, true ->
-	  Format.fprintf Config.formatter "@.TRUE PROPERTY, k = %i@." k;
+	  Format.fprintf Config.formatter "@.%s TRUE %s PROPERTY, k = %i@." bgreen cdef k;
 	  false
   in
   next_step, entailments_acc
@@ -103,15 +107,21 @@ let rec kindly n acc f k =
 		  match solve_k n (fst acc) f k with
 		  | false, _ -> Format.fprintf Config.formatter "@.DONE @."
 		  | true, entailment_acc -> 
-			let loopcheck, new_states = 
-			  check_noloop (snd acc) (state_part f) (incr_part f) k
-			in
-			if loopcheck then
-			  Format.fprintf Config.formatter 
-				"@.LOOP AT %i STEP.@. PROPERTY HOLDS @."
-				k
+			if !check_for_loops then
+			  begin
+			  let loopcheck, new_states = 
+				check_noloop (snd acc) (state_part f) (incr_part f) k
+			  in
+			  if loopcheck then
+				Format.fprintf Config.formatter 
+				  "@.LOOP AT %i STEP.@. PROPERTY HOLDS @."
+				  k
+			  else
+				kindly n (entailment_acc, new_states) f (k+1)
+			  end
 			else
-			  kindly n (entailment_acc, new_states) f (k+1)
+			  kindly n (entailment_acc, []) f (k+1)
+		
 		end
 	  with
 	  | Smt.Error e -> 
